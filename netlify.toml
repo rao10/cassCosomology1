@@ -3,9 +3,13 @@
   for = "/*" # you can configure the correct paths here
   [headers.values]
     access-control-allow-origin = "https://casscosmology.netlify.app" # see a list of allowed values here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
-     X-Frame-Options = "ALLOW-FROM https://casscosmology.netlify.app"
+    X-Frame-Options = "ALLOW-FROM https://casscosmology.netlify.app"
+    Content-Security-Policy = "frame-ancestors https://casscosmology.netlify.app"
 
-[[headers]]
-for = "/*"
-  [headers.values]
-  Content-Security-Policy = "frame-ancestors https://casscosmology.netlify.app"
+[[redirects]]
+from = "/proxy/*"
+to = "https://casscosmology.com/:splat"
+status = 200
+force = true
+
+
