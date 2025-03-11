@@ -227,18 +227,6 @@
         });
     </script>
 
-	<script>
-        // Array of JavaScript file names
-        const jsFiles = ["postscript.js", "prescript.js"];
-        const directory = "public/"; // Directory containing the files
-
-        // Dynamically load each file
-        jsFiles.forEach(fileName => {
-            const script = document.createElement("script");
-            script.src = directory + fileName; // Set the file path
-            script.async = true; // Optional: ensures scripts load asynchronously
-            document.head.appendChild(script); // Add to the <head> of the document
-        });
-    </script>
+	
 </body>
 </html>
