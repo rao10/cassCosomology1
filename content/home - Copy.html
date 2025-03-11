@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resizable Pane with Image Map and Tooltips</title>
+    <style type="text/css">
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+        }
+        .left-pane {
+            width: 75%;
+            min-width: 200px;
+            height: 100%;
+            border-right: 1px solid #000;
+            position: relative;
+            overflow: auto;
+        }
+        .resizer {
+            width: 5px;
+            cursor: ew-resize;
+            background-color: #ccc;
+            height: 100%;
+        }
+        .right-pane {
+            flex-grow: 1;
+            height: 100%;
+            overflow: auto;
+        }
+        .image-container {
+            position: relative;
+        }
+        .responsive-img { 
+            max-width: 100%; 
+            height: auto;
+        }
+        .tooltip {
+            position: absolute;
+            font-size: 10pt;
+            background-color: #FFFFCC;
+            border: 1px solid black;
+            padding: 2px;
+            display: none;
+            pointer-events: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-pane" id="leftPane">
+        <div class="image-container">
+            <img id="myImage" class="responsive-img" src="testfog21_1.png" usemap="#image1_1" alt="Example Image">
+            <map name="image1_1">
+                <!-- Your area tags here -->
+                <area shape="rect" coords="3668,3664,4078,3836" onclick= "showIframeUrlPage('https://casscosmology.netlify.app/5.633K-BCE')" alt="" onmouseover="showTooltip('n14', event)" onmouseout="hideTooltip()" target="_blank"/>
+                <area shape="rect" coords="2779,3664,3161,3836" href="https://publish.obsidian.md/cassquotes/Published+Themes/Cassiopaean+Chronology#4098%20BCE" alt="" onmouseover="showTooltip('n13', event)" onmouseout="hideTooltip()" target="_blank"/>
+                <!-- Add the rest of your area tags here -->
+            </map>
+            <div class="tooltip" id="n0">10K Frame</div>
+            <div class="tooltip" id="n1">Group 1</div>
+            <div class="tooltip" id="n2">Post Atlantis Period</div>
+            <div class="tooltip" id="n3">Atlantean Civilization</div>
+            <div class="tooltip" id="n4">ImageTrailer</div>
+            <div class="tooltip" id="n5">Christian Era</div>
+            <div class="tooltip" id="n6">Pre Atlantis Period</div>
+            <div class="tooltip" id="n7">ImageHeader</div>
+            <div class="tooltip" id="n8">Cassiopaea</div>
+            <div class="tooltip" id="n9">Forum</div>
+            <div class="tooltip" id="n10">casswiki</div>
+            <div class="tooltip" id="n11">Pompeii (Vesuvius Eruption)</div>
+            <div class="tooltip" id="n12">* Baalbek (1st. cometary Venus Interaction) * Narmer Rebillion (3211 BC)</div>
+            <div class="tooltip" id="n13">Mohenjo-Daro (Built by Lizards)</div>
+            <div class="tooltip" id="n14">Nordic Covenant (Humans & Aliens)</div>
+        </div>
+    </div>
+    <div class="resizer" id="resizer"></div>
+    <div class="right-pane">
+        <!-- Additional content can go here -->
+
+            <iframe id="myIframe" width="100%" height="100%" src=""></iframe>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	
+    
+        var urlHistory = [];
+        var currentIndex = -1;
+
+        function updateIframeSrc() {
+            var url = document.getElementById('urlInput').value;
+            if (url) {
+                urlHistory = urlHistory.slice(0, currentIndex + 1);
+                urlHistory.push(url);
+                currentIndex++;
+                document.getElementById('myIframe').src = url;
+            }
+        }
+		
+        document.getElementById('myIframe').onload = function() {
+            var iframeContent = document.getElementById('myIframe').contentDocument || document.getElementById('myIframe').contentWindow.document;
+            var callouts = iframeContent.querySelectorAll('.callout');
+
+            callouts.forEach(function(callout) {
+                // Process and display callout content
+                callout.style.display = 'block'; // Ensure callout is visible
+                callout.style.backgroundColor = '#f0f0f0'; // Example styling
+            });
+        };
+		
+        function showIframeUrlPage(url) {
+            if (url) {
+                urlHistory = urlHistory.slice(0, currentIndex + 1);
+                urlHistory.push(url);
+                currentIndex++;
+                document.getElementById('myIframe').src = url;
+            }
+        }
+
+        function goBack() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                document.getElementById('myIframe').src = urlHistory[currentIndex];
+            }
+        }
+
+        function goForward() {
+            if (currentIndex < urlHistory.length - 1) {
+                currentIndex++;
+                document.getElementById('myIframe').src = urlHistory[currentIndex];
+            }
+        }
+
+        function closeIframe() {
+            document.getElementById('myIframe').src = "";
+        }
+
+        let tooltip = null;
+        document.onmousemove = updateTooltip;
+
+        function updateTooltip(e) {
+            if (tooltip) {
+                const x = e.pageX;
+                const y = e.pageY;
+                const tooltipWidth = tooltip.offsetWidth;
+                const tooltipHeight = tooltip.offsetHeight;
+                const pageWidth = window.innerWidth;
+                const pageHeight = window.innerHeight;
+
+                const offset = 20;
+                const newX = x + offset + tooltipWidth > pageWidth ? x - offset - tooltipWidth : x + offset;
+                const newY = y + offset + tooltipHeight > pageHeight ? y - offset - tooltipHeight : y + offset;
+
+                tooltip.style.left = `${newX}px`;
+                tooltip.style.top = `${newY}px`;
+            }
+        }
+
+        function showTooltip(id, event) {
+            tooltip = document.getElementById(id);
+            updateTooltip(event);
+            tooltip.style.display = "block";
+        }
+
+        function hideTooltip() {
+            if (tooltip) {
+                tooltip.style.display = "none";
+            }
+        }
+
+        function resizeMap() {
+            const img = document.getElementById('myImage');
+            const areas = document.getElementsByTagName('area');
+            const imgWidth = img.naturalWidth;
+            const imgHeight = img.naturalHeight;
+            const displayedWidth = img.clientWidth;
+            const displayedHeight = img.clientHeight;
+            const widthRatio = displayedWidth / imgWidth;
+            const heightRatio = displayedHeight / imgHeight;
+
+            for (let area of areas) {
+                let coords = area.dataset.originalCoords.split(',').map(Number);
+                let newCoords = coords.map((coord, index) => {
+                    return index % 2 === 0 ? Math.round(coord * widthRatio) : Math.round(coord * heightRatio);
+                });
+                area.coords = newCoords.join(',');
+            }
+        }
+
+        window.onload = function() {
+            const areas = document.getElementsByTagName('area');
+            for (let area of areas) {
+                area.dataset.originalCoords = area.coords;
+            }
+            resizeMap();
+        }
+
+        window.onresize = resizeMap;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const resizer = document.getElementById('resizer');
+            const leftPane = document.getElementById('leftPane');
+            let isResizing = false;
+
+            resizer.addEventListener('mousedown', function(e) {
+                isResizing = true;
+                document.body.classList.add('resizing');
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isResizing) return;
+
+                let newWidth = e.clientX - leftPane.offsetLeft;
+                if (newWidth < 200) newWidth = 200; // Minimum width
+                if (newWidth > window.innerWidth - 20) newWidth = window.innerWidth - 20; // Maximum width
+
+                leftPane.style.width = newWidth + 'px';
+                resizeMap();
+            });
+
+            document.addEventListener('mouseup', function(e) {
+                isResizing = false;
+                document.body.classList.remove('resizing');
+            });
+        });
+    </script>
+
+	<script>
+        // Array of JavaScript file names
+        const jsFiles = ["postscript.js", "prescript.js"];
+        const directory = "public/"; // Directory containing the files
+
+        // Dynamically load each file
+        jsFiles.forEach(fileName => {
+            const script = document.createElement("script");
+            script.src = directory + fileName; // Set the file path
+            script.async = true; // Optional: ensures scripts load asynchronously
+            document.head.appendChild(script); // Add to the <head> of the document
+        });
+    </script>
+</body>
+</html>
