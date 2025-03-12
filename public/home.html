@@ -163,7 +163,11 @@
 
         function showTooltip(id, event) {
             tooltip = document.getElementById(id);
-            updateTooltip(event);
+            updateTooltip(event);	    
+    	   const contentDiv = document.getElementById(id); // The hidden content div (e.g., "n16")
+
+    		// Dynamically set the HTML content
+    		tooltip.innerHTML = contentDiv.innerHTML
             tooltip.style.display = "block";
         }
 
