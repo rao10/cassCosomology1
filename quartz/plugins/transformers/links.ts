@@ -8,6 +8,7 @@ import {
   simplifySlug,
   splitAnchor,
   transformLink,
+  joinSegments,
 } from "../../util/path"
 import path from "path"
 import { visit } from "unist-util-visit"

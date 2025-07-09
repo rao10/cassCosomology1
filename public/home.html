@@ -1,91 +1,548 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Resizable Pane with Image Map and Tooltips</title>
-    <style type="text/css">
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-        }
-        .left-pane {
-            width: 75%;
-            min-width: 200px;
-            height: 100%;
-            border-right: 1px solid #000;
-            position: relative;
-            overflow: auto;
-        }
-        .resizer {
-            width: 5px;
-            cursor: ew-resize;
-            background-color: #ccc;
-            height: 100%;
-        }
-        .right-pane {
-            flex-grow: 1;
-            height: 100%;
-            overflow: auto;
-        }
-        .image-container {
-            position: relative;
-        }
-        .responsive-img { 
-            max-width: 100%; 
-            height: auto;
-        }
-        .tooltip {
-            position: absolute;
-            font-size: 10pt;
-            background-color: #FFFFCC;
-            border: 1px solid black;
-            padding: 2px;
-            display: none;
-            pointer-events: none;
-            z-index: 1000;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Cassiopaean Cosmology</title>
+  <!-- Popper.js (required by Tippy.js) -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<!-- Tippy.js -->
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<!-- Optional: Tippy.js CSS for default styling -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .left-pane {
+      width: 1000px;
+      min-width: 200px;
+      max-width: 90%;
+      height: 100%;
+      overflow: auto;
+      border-right: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right-pane {
+      flex-grow: 1;
+      height: 100%;
+      overflow: auto;
+    }
+
+    #resizeControls {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 5px;
+      background: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    #resizeControls button {
+      padding: 4px 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .image-container {
+      padding: 10px;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+    }
+	.tooltip-container {
+    position: relative;
+    display: inline-block; /* Ensures proper size for hover area */
+}
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px ;
+  flex: 1 1 auto; /* Ensures it doesn't shrink or stretch awkwardly */
+  align-self: flex-start; /* Align it to the start of the container */
+  white-space: normal; /* Ensures text wraps */
+  max-width: 300px;
+}
+.tooltip-container:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+}
+.inline-spinner {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.inline-spinner.visible {
+  display: inline-block;
+  opacity: 1;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#infoBtn {
+  font-size: 16px;
+  padding: 4px 8px;
+  background-color: #e0e0e0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#resizeControls button {
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #007B8A;
+  border: 1px solid #005F66;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#resizeControls button:hover {
+  background-color: #00A3B0;
+}
+
+#resizeControls button:focus {
+  outline: 2px solid #00D1D1;
+  outline-offset: 2px;
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
 </head>
 <body>
+
+  <div class="container">
     <div class="left-pane" id="leftPane">
+		<div id="resizeControls">
+		  <button id="increaseWidth" data-tippy-content="Increase left pane width">➕</button>
+		  <button id="decreaseWidth" data-tippy-content="Decrease left pane width">➖</button>
+		  <button id="resetWidth" data-tippy-content="Reset to default width">⭯</button>
+		  <button id="infoBtn"
+				  data-tippy-content="<strong>Resize Panel</strong><br>Use ➕ and ➖ to adjust the left pane. Click ⭯ to reset.<br> Click Events gray box to show details on the right pane"
+				  aria-label="Info">ℹ️</button>
+		  <div id="inlineSpinner" class="inline-spinner"></div>
+		</div>
         <div class="image-container">
-            <img id="myImage" class="responsive-img" src="testfog21_1.png" usemap="#image1_1" alt="Example Image">
-            <map name="image1_1">
-                <!-- Your area tags here -->
-                <area shape="rect" coords="3668,3664,4078,3836" onclick= "showIframeUrlPage('https://casscosmology1.netlify.app/5.633K-BCE')" alt="" onmouseover="showTooltip('n14', event)" onmouseout="hideTooltip()" target="_blank"/>
-                <area shape="rect" coords="2779,3664,3161,3836" href="https://publish.obsidian.md/cassquotes/Published+Themes/Cassiopaean+Chronology#4098%20BCE" alt="" onmouseover="showTooltip('n13', event)" onmouseout="hideTooltip()" target="_blank"/>
-                <!-- Add the rest of your area tags here -->
-            </map>
-            <div class="tooltip" id="n0">10K Frame</div>
-            <div class="tooltip" id="n1">Group 1</div>
-            <div class="tooltip" id="n2">Post Atlantis Period</div>
-            <div class="tooltip" id="n3">Atlantean Civilization</div>
-            <div class="tooltip" id="n4">ImageTrailer</div>
-            <div class="tooltip" id="n5">Christian Era</div>
-            <div class="tooltip" id="n6">Pre Atlantis Period</div>
-            <div class="tooltip" id="n7">ImageHeader</div>
-            <div class="tooltip" id="n8">Cassiopaea</div>
-            <div class="tooltip" id="n9">Forum</div>
-            <div class="tooltip" id="n10">casswiki</div>
-            <div class="tooltip" id="n11">Pompeii (Vesuvius Eruption)</div>
-            <div class="tooltip" id="n12">* Baalbek (1st. cometary Venus Interaction) * Narmer Rebillion (3211 BC)</div>
-            <div class="tooltip" id="n13">Mohenjo-Daro (Built by Lizards)</div>
-            <div class="tooltip" id="n14">Nordic Covenant (Humans & Aliens)</div>
-        </div>
+            <img id="myImage" class="responsive-img" src="Cass_Cosm_07062025_LR1_1.png" usemap="#image1_1" alt="Example Image">
+<map name="image1_1">
+  <area shape="rect" coords="3384,4541,4037,4687" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1350-AD')" alt="" onmouseover="showTooltip('n142',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3676,4805,3734,4863" alt=""  />
+  <area shape="rect" coords="252,4914,349,5240" alt=""  />
+  <area shape="rect" coords="264,2266,337,2774" alt=""  />
+  <area shape="rect" coords="252,3996,349,4241" alt=""  "/>
+  <area shape="rect" coords="264,1209,337,1785" alt=""  />
+  <area shape="rect" coords="252,2877,349,3454" alt=""  />
+  <area shape="rect" coords="6464,1918,6522,1976" alt="" />
+  <area shape="rect" coords="264,1748,337,2324" alt=""  />
+  <area shape="rect" coords="252,4337,349,4914" alt="" onmouseover="showTooltip('n133',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="252,3420,349,3996" alt="" onmouseover="showTooltip('n132',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="252,459,349,1113" alt="" onmouseover="showTooltip('n131',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6122,4803,6180,4861" alt="" onmouseover="showTooltip('n130',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5287,4803,5345,4861" alt="" onmouseover="showTooltip('n129',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4717,4802,4775,4859" alt="" onmouseover="showTooltip('n128',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4394,4802,4452,4860" alt="" onmouseover="showTooltip('n127',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5120,4583,5514,4687" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1947-AD')" alt="" onmouseover="showTooltip('n126',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5885,4583,6422,4687" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1972-AD')" alt="" onmouseover="showTooltip('n125',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4126,4583,4719,4687" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1500-AD')" alt="" onmouseover="showTooltip('n124',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4518,4967,4974,5169" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1830-AD')" alt="" onmouseover="showTooltip('n123',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2789,4967,3507,5195" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1100-AD')" alt="" onmouseover="showTooltip('n122',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3119,4805,3177,4863" alt="" onmouseover="showTooltip('n121',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1769,4483,2274,4685" alt="" onmouseover="showTooltip('n120',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2375,4805,2603,4863" alt="" onmouseover="showTooltip('n119',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="935,4805,993,4863" alt="" onmouseover="showTooltip('n118',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6363,4921,6948,5002" onclick="showIframeUrlPage('https://casscosmology.netlify.app/2014-AD')" alt="" onmouseover="showTooltip('n117',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1566,4967,2427,5175" onclick="showIframeUrlPage('https://casscosmology.netlify.app/564-AD')" alt="" onmouseover="showTooltip('n116',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3702,4967,4391,5103" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1350-AD')" alt="" onmouseover="showTooltip('n115',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2512,4567,3082,4687" onclick="showIframeUrlPage('https://casscosmology.netlify.app/700-AD')" alt="" onmouseover="showTooltip('n114',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5573,4967,6064,5086" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1953-AD')" alt="" onmouseover="showTooltip('n113',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2768,4795,2826,4853" alt="" onmouseover="showTooltip('n112',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1968,4805,2026,4863" alt="" onmouseover="showTooltip('n111',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1186,4805,1662,4863" onclick="showIframeUrlPage('https://casscosmology.netlify.app/before-564AD-dummy-Yrs')" alt="" onmouseover="showTooltip('n110',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6631,4803,6689,4861" alt="" onmouseover="showTooltip('n109',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5781,4803,5839,4861" alt="" onmouseover="showTooltip('n108',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4010,4805,4068,4863" alt="" onmouseover="showTooltip('n107',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="734,4967,1193,5102" onclick="showIframeUrlPage('https://casscosmology.netlify.app/56-AD')" alt="" onmouseover="showTooltip('n106',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4803,3311,5737,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/2200-BCE')" alt="" onmouseover="showTooltip('n105',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3070,3646,3128,3703" alt="" onmouseover="showTooltip('n104',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5241,3646,5299,3703" alt="" onmouseover="showTooltip('n103',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2921,3350,3277,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/4233-BCE')" alt="" onmouseover="showTooltip('n102',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5447,3816,6157,4024" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1600-BCE')" alt="" onmouseover="showTooltip('n101',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1636,3816,2316,4038" onclick="showIframeUrlPage('https://casscosmology.netlify.app/6K-BCE')" alt="" onmouseover="showTooltip('n100',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1947,3646,2005,3703" alt="" onmouseover="showTooltip('n99',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6785,3771,7425,3913" onclick="showIframeUrlPage('https://casscosmology.netlify.app/753-BCE')" alt="" onmouseover="showTooltip('n98',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2042,3276,2821,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/5.633K-BCE')" alt="" onmouseover="showTooltip('n97',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="525,3816,1457,4138" onclick="showIframeUrlPage('https://casscosmology.netlify.app/8K-BCE')" alt="" onmouseover="showTooltip('n96',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2458,3816,3127,3976" onclick="showIframeUrlPage('https://casscosmology.netlify.app/5200-BCE')" alt="" onmouseover="showTooltip('n95',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7310,3335,7932,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/44-BCE')" alt="" onmouseover="showTooltip('n94',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4126,3311,4625,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/2676-BCE')" alt="" onmouseover="showTooltip('n93',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="628,3141,1859,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/6249-BCE')" alt="" onmouseover="showTooltip('n92',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="962,3646,1020,3703" alt="" onmouseover="showTooltip('n91',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7076,3646,7134,3703" alt="" onmouseover="showTooltip('n90',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1215,3646,1272,3703" alt="" onmouseover="showTooltip('n89',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2403,3646,2460,3703" alt="" onmouseover="showTooltip('n88',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2764,3646,2821,3703" alt="" onmouseover="showTooltip('n87',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3409,3646,3467,3703" alt="" onmouseover="showTooltip('n86',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3636,3646,3694,3703" alt="" onmouseover="showTooltip('n85',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3964,3646,4022,3703" alt="" onmouseover="showTooltip('n84',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4347,3646,4404,3703" alt="" onmouseover="showTooltip('n83',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4690,3646,4748,3703" alt="" onmouseover="showTooltip('n82',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5774,3647,5831,3705" alt="" onmouseover="showTooltip('n81',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7593,3646,7650,3703" alt="" onmouseover="showTooltip('n80',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6311,3646,6368,3703" alt="" onmouseover="showTooltip('n79',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4389,3816,5142,4138" onclick="showIframeUrlPage('https://casscosmology.netlify.app/2300-BCE')" alt="" onmouseover="showTooltip('n78',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5922,3100,6757,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/1100-BCE')" alt="" onmouseover="showTooltip('n77',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3766,3816,4221,3969" onclick="showIframeUrlPage('https://casscosmology.netlify.app/3131-BCE')" alt="" onmouseover="showTooltip('n76',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3236,3816,3640,3969" onclick="showIframeUrlPage('https://casscosmology.netlify.app/4098-BCE')" alt="" onmouseover="showTooltip('n75',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3332,3276,3998,3479" onclick="showIframeUrlPage('https://casscosmology.netlify.app/3218-BCE')" alt="" onmouseover="showTooltip('n74',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4918,2482,5520,2729" onclick="showIframeUrlPage('https://casscosmology.netlify.app/13.4K-BCE')" alt="" onmouseover="showTooltip('n73',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5241,1918,5299,1976" alt="" onmouseover="showTooltip('n72',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5567,1918,5624,1976" alt="" onmouseover="showTooltip('n71',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5056,1918,5114,1976" alt="" onmouseover="showTooltip('n70',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4614,1918,4672,1976" alt="" onmouseover="showTooltip('n69',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="636,2090,2027,2470" onclick="showIframeUrlPage('https://casscosmology.netlify.app/77K-BCE')" alt="" onmouseover="showTooltip('n68',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4597,2090,5248,2277" onclick="showIframeUrlPage('https://casscosmology.netlify.app/16K-BCE')" alt="" onmouseover="showTooltip('n67',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1964,1565,2500,1751" onclick="showIframeUrlPage('https://casscosmology.netlify.app/72K-BCE')" alt="" onmouseover="showTooltip('n66',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6414,1623,7308,1751" onclick="showIframeUrlPage('https://casscosmology.netlify.app/9K-BCE')" alt="" onmouseover="showTooltip('n65',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7267,2090,7975,2277" onclick="showIframeUrlPage('https://casscosmology.netlify.app/8.5-K-BCE')" alt="" onmouseover="showTooltip('n64',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3115,1430,3841,1751" onclick="showIframeUrlPage('https://casscosmology.netlify.app/80-48K-BCE')" alt="" onmouseover="showTooltip('n63',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="922,1615,1391,1751" onclick="showIframeUrlPage('https://casscosmology.netlify.app/78K-BCE')" alt="" onmouseover="showTooltip('n62',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6763,1918,6821,1976" alt="" onmouseover="showTooltip('n61',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7059,1918,7117,1976" alt="" onmouseover="showTooltip('n60',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="973,1918,1030,1976" href="https://publish.obsidian.md/cassquotes/Published+Themes/Cassiopaean+Chronology#80K%20BCE" alt="" onmouseover="showTooltip('n59',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3450,1918,3507,1976" alt="" onmouseover="showTooltip('n58',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7594,1918,7651,1976" alt="" onmouseover="showTooltip('n57',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1302,1918,1360,1976" alt="" onmouseover="showTooltip('n56',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1128,1918,1185,1976" alt="" onmouseover="showTooltip('n55',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2203,1918,2261,1976" alt="" onmouseover="showTooltip('n54',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2528,1918,2586,1976" alt="" onmouseover="showTooltip('n53',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3794,1918,3852,1976" alt="" onmouseover="showTooltip('n52',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4357,1918,4415,1976" alt="" onmouseover="showTooltip('n51',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4894,1918,4951,1976" alt="" onmouseover="showTooltip('n50',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5420,1918,5478,1976" alt="" onmouseover="showTooltip('n49',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5884,1918,5941,1976" alt="" onmouseover="showTooltip('n48',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6088,1918,6145,1976" alt="" onmouseover="showTooltip('n47',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6292,1918,6349,1976" alt="" onmouseover="showTooltip('n46',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3094,2090,4552,2515" onclick="showIframeUrlPage('https://casscosmology.netlify.app/48K-BCE')" alt="" onmouseover="showTooltip('n45',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3932,1422,4841,1751" onclick="showIframeUrlPage('https://casscosmology.netlify.app/26K-BCE')"  alt="" onmouseover="showTooltip('n44',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5537,2090,6867,2732" onclick="showIframeUrlPage('https://casscosmology.netlify.app/10K-Frame')"  alt="" onmouseover="showTooltip('n43',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4978,1415,5921,1751" onclick="showIframeUrlPage('https://casscosmology.netlify.app/12K-BCE')" alt="" onmouseover="showTooltip('n42',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2079,2090,3034,2337" onclick="showIframeUrlPage('https://casscosmology.netlify.app/68K-BCE')" alt="" onmouseover="showTooltip('n41',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5708,1843,6649,2051" onclick="showIframeUrlPage('https://casscosmology.netlify.app/10K-Frame')" alt="" onmouseover="showTooltip('n40',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4929,796,4986,854" alt="" onmouseover="showTooltip('n39',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4574,881,5342,1089" onclick="showIframeUrlPage('https://casscosmology.netlify.app/350K-YA')" alt="" onmouseover="showTooltip('n38',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2792,629,3466,729" onclick="showIframeUrlPage('https://casscosmology.netlify.app/28.2-Million-YA')" alt="" onmouseover="showTooltip('n37',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3100,796,3158,854" alt="" onmouseover="showTooltip('n36',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5984,881,6739,1053" onclick="showIframeUrlPage('https://casscosmology.netlify.app/130K-YA')" alt="" onmouseover="showTooltip('n35',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7347,590,7937,729" onclick="showIframeUrlPage('https://casscosmology.netlify.app/100K-YA')" alt="" onmouseover="showTooltip('n34',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3854,629,4599,729" onclick="showIframeUrlPage('https://casscosmology.netlify.app/5.3-Million-YA')" alt="" onmouseover="showTooltip('n33',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1593,881,2463,1025" onclick="showIframeUrlPage('https://casscosmology.netlify.app/890-Million-YA')" alt="" onmouseover="showTooltip('n32',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="726,606,1320,729" onclick="showIframeUrlPage('https://casscosmology.netlify.app/3-Billion-YA')" alt="" onmouseover="showTooltip('n31',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1999,796,2057,854" alt="" onmouseover="showTooltip('n30',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4198,796,4255,854" alt="" onmouseover="showTooltip('n29',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5578,796,5636,854" alt="" onmouseover="showTooltip('n28',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="992,796,1050,854" alt="" onmouseover="showTooltip('n27',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3728,796,3786,854" alt="" onmouseover="showTooltip('n26',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6333,796,6390,854" alt="" onmouseover="showTooltip('n25',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7613,809,7671,867" alt="" onmouseover="showTooltip('n24',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3480,881,4034,1025" onclick="showIframeUrlPage('https://casscosmology.netlify.app/27-Million-YA')" alt="" onmouseover="showTooltip('n23',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4849,432,6365,729" onclick="showIframeUrlPage('https://casscosmology.netlify.app/309K-YA')" alt="" onmouseover="showTooltip('n22',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7305,4840,7362,4898" alt="" onmouseover="showTooltip('n21',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7080,4810,7195,4925" alt="" onmouseover="showTooltip('n20',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7080,5178,7195,5293" alt="" onmouseover="showTooltip('n19',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7080,5024,7195,5140" alt="" onmouseover="showTooltip('n18',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7018,4592,8070,5306" alt="" onmouseover="showTooltip('n17',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="655,136,809,285" href="https://cassiopaea.org/forum" alt="" onmouseover="showTooltip('n16',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="252,5240,349,5336" alt="" onmouseover="showTooltip('n15',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="252,4241,349,4337" alt="" onmouseover="showTooltip('n14',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="252,2774,349,2870" alt="" onmouseover="showTooltip('n13',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="252,1113,349,1209" alt="" onmouseover="showTooltip('n12',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="252,363,349,459" alt="" onmouseover="showTooltip('n11',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6614,158,6864,292" href="https://cassiopaea.org/forum" alt="" onmouseover="showTooltip('n10',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7400,129,7592,321" href="https://casswiki.net" alt="" onmouseover="showTooltip('n9',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7010,151,7164,300" href="https://cassiopaea.org/forum" alt="" onmouseover="showTooltip('n8',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="970,90,1050,234" href="https://cassiopaea.org" alt="" onmouseover="showTooltip('n7',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="406,39,8080,377" alt="" />
+  <area shape="rect" coords="406,377,8070,1141" alt="" />
+  <area shape="rect" coords="406,4257,8070,5306" alt="" />
+  <area shape="rect" coords="406,5306,8070,5517" alt=""  />
+  <area shape="rect" coords="406,1141,8070,2790" alt="" />
+  <area shape="rect" coords="406,2790,8070,4257" alt="" />
+  <area shape="rect" coords="10,10,8108,5590" alt="" />
+</map>
+<div class="tooltip" id="n0">Group 1</div>
+<div class="tooltip" id="n1">Post Atlantis Period</div>
+<div class="tooltip" id="n2">Atlantean Civilization</div>
+<div class="tooltip" id="n3">ImageTrailer</div>
+<div class="tooltip" id="n4">Christian Era</div>
+<div class="tooltip" id="n5">Pre Atlantis Period</div>
+<div class="tooltip" id="n6">ImageHeader</div>
+<div class="tooltip" id="n7">Cassiopaea</div>
+<div class="tooltip" id="n8">Forum</div>
+<div class="tooltip" id="n9">casswiki</div>
+<div class="tooltip" id="n10">Download</div>
+<div class="tooltip" id="n11">3 bil. YA</div>
+<div class="tooltip" id="n12">80K BCE</div>
+<div class="tooltip" id="n13">8000 BCE</div>
+<div class="tooltip" id="n14">1 AD</div>
+<div class="tooltip" id="n15">2014 AD</div>
+<div class="tooltip" id="n16">Cassiopaea</div>
+<div class="tooltip" id="n17">LEGEND</div>
+<div class="tooltip" id="n18">    Oort Cloud Comet Cluster (3600 Yrs)</div>
+<div class="tooltip" id="n19">   Giant Comet Disintegration Events</div>
+<div class="tooltip" id="n20">Races  </div>
+<div class="tooltip" id="n21">
+<span style="background-color: white">Aryans</span><br>
+<span style="background-color: #8ECAFF">Native American</span> <br> 
+<span style="background-color: yellow">Neandethal</span><br>
+<span style="background-color: #D4A99C">Parantha/Descendants</span> <br>
+<span style="background-color: black; color: white">4D STS</span>
+</div>
+<div class="tooltip" id="n22">
+* <span style="background-color: black; color: white">Lizards</span> take over of 3D Earth<br>
+* Start of 309K years Wave Cycle<br>
+* Fall of Man - Adam & Eve<br>
+* Lemuria submerged (Pacific Ocean)< &nbsp;<br>
+* Easter Island (Statues - Nephilim) is remnant of Lumeria &nbsp;
+</div>
+<div class="tooltip" id="n23">   Dinosaurs Extinct<br>(Comet bombardment)</div>
+<div class="tooltip" id="n24">100K YA</div>
+<div class="tooltip" id="n25">130K YA</div>
+<div class="tooltip" id="n26">27 Million YA</div>
+<div class="tooltip" id="n27">3 Billion YA</div>
+<div class="tooltip" id="n28">309K YA</div>
+<div class="tooltip" id="n29">5.3 Million YA</div>
+<div class="tooltip" id="n30">890 Million YA</div>
+<div class="tooltip" id="n31">Birth of Moon from Earth<br>(Cometary interaction)</div>
+<div class="tooltip" id="n32">Ooart Cloud Comet Cluster First Entry<br>Current Periodicity: 3600 years</div>
+<div class="tooltip" id="n33"> Earth's Oldest Man-<span style="background-color: yellow;">Neanderthal</span> </div>
+<div class="tooltip" id="n34">Last Pole Shift<br>(100K Years Periodicity)</div>
+<div class="tooltip" id="n35">Planting of Jews in Middle East &nbsp;<br>
+ &nbsp; &nbsp; &nbsp;(by <span style="background-color: black; color: white">Lizards/4D STS</span>)</div>
+<div class="tooltip" id="n36">28.2 Million YA</div>
+<div class="tooltip" id="n37">* Last Sun's twin (nemesis) <br>   Interaction - cyclical</div>
+<div class="tooltip" id="n38"> "Landing Strip" on Moon<br>
+Residue of Underground Lignite  &nbsp;<br>
+ & Gold Minings by  &nbsp;<span style="background-color: black; color: white">Orion STS</span> </div>
+<div class="tooltip" id="n39">350K YA</div>
+<div class="tooltip" id="n40">10K BCE Period</div>
+<div class="tooltip" id="n41">* Continental Shift of Laurasia/Gondwana<br>* Indian Plate collision with Eurasian Plate<br>* Lake Toba supervolcano eruption <br>   & Cataclysm</div>
+<div class="tooltip" id="n42">* Machu Picchu<br>* comets and migrations to underground<br>* Extinction of Clovis Race<br>* Nephilim brought in (one reference)<br>* Cart Ruts from Malta (Magnetic<br>   disturbances)<br>* Origin of Piri Ries map</div>
+<div class="tooltip" id="n43">* Younger Dryas (Flash freezing of Mammoths)<br>* 7 Degrees Geographical axis tilt<br>* Noah's Flood Myth (Mars, Comets)<br>   - 19 Million of 6 Billion survived<br>* Tower of Babel destruction by Lizards<br>* Final Breakup of Atlantis (recovered)<br>* Migration to Canary Island, Egypt, Inca<br>* Construction of Gobekli Tepe (Surviving Pyramid builders)<br>* The war of 10 kings (Mahabharata)<br>* Submergence of Dwarika<br>* End of longevity gene (Age: 2500 yrs(7% people),<br>        rest 800 yrs avrg.)</div>
+<div class="tooltip" id="n44">
+* cometary bombardment.<br>
+* Taupo supervolcano(NZ) eruption<br>
+* Arrival of the <span style="background-color: black; color: white">STS Orion headquarters</span> <br>
+*  <span style="background-color: black; color: white">Lizards</span> lived among humans? <br>
+* Atlantis 2nd Breakup & Destruction
+</div>
+<div class="tooltip" id="n45">
+* Atlantis 1st Destruction - 5 pieces<br>
+* India: Nuclear War between  &nbsp;<span style="background-color: #D4A99C">Paranthas</span> and <span style="background-color: white">Kantekanians </span><br>
+  &nbsp; & 50% destruction,<br>
+* <span style="background-color: #D4A99C">Paranthas (Ancestors of Dravidians) &nbsp;</span> Extinction  due to <br> &nbsp;  cataclysm (F-M89 Haplogroup) <br>
+* Historical Rama as Atlantean High priest & Legend of Phoenix  &nbsp; <br>
+* Atlantean pyramids on Mars 
+</div>
+<div class="tooltip" id="n46">Egypt/Inca etc.</div>
+<div class="tooltip" id="n47">  YD+40 Yrs</div>
+<div class="tooltip" id="n48">10.6 K (YD)</div>
+<div class="tooltip" id="n49">12.4K BCE</div>
+<div class="tooltip" id="n50">16K BCE</div>
+<div class="tooltip" id="n51">26K BCE</div>
+<div class="tooltip" id="n52">48K BCE</div>
+<div class="tooltip" id="n53">68K BCE</div>
+<div class="tooltip" id="n54">72K BCE</div>
+<div class="tooltip" id="n55">78K BCE</div>
+<div class="tooltip" id="n56">77K BCE</div>
+<div class="tooltip" id="n57">8.5 K BCE</div>
+<div class="tooltip" id="n58">80- 48K BCE</div>
+<div class="tooltip" id="n59">80K BCE</div>
+<div class="tooltip" id="n60">8788 BCE</div>
+<div class="tooltip" id="n61">9K BCE</div>
+<div class="tooltip" id="n62">Comet Venus Entry<br>into Solar System</div>
+<div class="tooltip" id="n63">Early writing of  &nbsp;<i>Book of Enoch</i> <br>
+by Sanskrit Society in India.&nbsp;<br><b>Races</b>: <br>
+&nbsp;<span style="background-color: #D4A99C">* Paranthas (Denisovan type)</span> <br>
+&nbsp;<span style="background-color: #8ECAFF">* Native Amertican types </span> <br>
+&nbsp;* Some <span style="background-color: white">Kantek types </span>
+</hmtl> </div>
+<div class="tooltip" id="n64">* Final Destruction of Atlantis<br>  (Pyramids)<br>* Sphinx & Egyptian Pyramids</div>
+<div class="tooltip" id="n65">Arrival(another reference) of Nephilim<br>(Presented as "Sons" of God)</div>
+<div class="tooltip" id="n66">
+<span style="background-color: black; color: white">Lizard</span> Frozen in Time 
+<br>to alter Human Affairs <br>
+</div>
+<div class="tooltip" id="n67">* Start of Vedas Collection<br>        (In Transit - BMAC?)<br>* Most of Vedas written in India</div>
+<div class="tooltip" id="n68">
+* Explosition of 5th planet Kantek(to Asteroid belt)<br>
+* Migration of &nbsp; <span style="background-color: white;">Kantekanian (ancestors of Celts, Aryans) &nbsp;</span><br>
+&nbsp; &nbsp;  to Earth through Portal at Kiev (<span style="background-color: black; color: white">Lizard</span> Air drop & Merkaba) &nbsp;<br>
+* Atlanteans well established <br>
+* 233 years coexistence with <span style="background-color: yellow;">Neanderthal</span><br>
+* <span style="background-color: yellow;">Neanderthal</span> taken to Other planets by <span style="background-color: black; color: white">4D Lizards</span>
+</div>
+<div class="tooltip" id="n69">17.7K</div>
+<div class="tooltip" id="n70">14.4K</div>
+<div class="tooltip" id="n71">12.1K</div>
+<div class="tooltip" id="n72">13.4K</div>
+<div class="tooltip" id="n73">Comet dust Enhancements<br>in Camp Century Ice Core<br>     (Clube & Napier)<br>       Approx. Years</div>
+<div class="tooltip" id="n74">* Baalbek (1st. cometary <br>      Venus Interaction)<br>* Narmer Rebillion (3211 BC)</div>
+<div class="tooltip" id="n75">
+ Mohenjo-Daro<br>
+(Built by <span style="background-color: black; color: white">Lizards</span>)
+</div>
+<div class="tooltip" id="n76">
+ Nordic Covenant <br>
+(Mostly Humans &<br> <span style="background-color: black; color: white">Some Others</span>)
+</div>
+<div class="tooltip" id="n77">
+* Bronze Age Destruction<br>
+&nbsp;  (Giant Comet Remnants)<br>
+* End of "Sound wave focusing" <br>
+ &nbsp; (Megalith) technology<br>
+* End of Mohenjo-Daro<br>
+* Angkhor Wat(Built by <span style="background-color: black; color: white">Lizards</span>)<br>
+* Troy (in Britain) destroyed (illiad)  &nbsp;
+</html>
+</div>
+<div class="tooltip" id="n78">
+* End of Iron Age civilization<br>
+* Planetary tilt 20 Deg.(slowly)&nbsp;<br>
+* <span style="background-color: black; color: white">Lizards</span> living among  Humans<br>
+  &nbsp;&nbsp; (Last time)<br>
+* Ramayan written ? <br>
+* Kumara Kandam Submerged?&nbsp;
+</div>
+<div class="tooltip" id="n79">1100 BCE</div>
+<div class="tooltip" id="n80">44 BCE</div>
+<div class="tooltip" id="n81">1600 BCE</div>
+<div class="tooltip" id="n82">2300 BCE</div>
+<div class="tooltip" id="n83">2676 BCE</div>
+<div class="tooltip" id="n84">3131 BCE</div>
+<div class="tooltip" id="n85">3218 BCE</div>
+<div class="tooltip" id="n86">4098 BCE</div>
+<div class="tooltip" id="n87">5200 BCE</div>
+<div class="tooltip" id="n88">5633 BCE</div>
+<div class="tooltip" id="n89">7K BCE</div>
+<div class="tooltip" id="n90">753 BCE</div>
+<div class="tooltip" id="n91">8K BCE</div>
+<div class="tooltip" id="n92">
+* Matriarchy Period (Y-chromosome Bottleneck)<br>
+* <span style="background-color: #D4A99C">Kumari Kandam</span> Submerged? - 6826 BCE <br>
+* <span style="background-color: white">Aryan</span> Invasion of India (Iranian Farmers) - 6249 BCE <br>
+&nbsp; &nbsp<u>Before</u>: <span style="background-color: yellow"> #3 Prototype - Neanderthal</span><br> 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; & Asian Tribes (<span style="background-color: #D4A99C">Parantha</span><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  Descendants/Dravidians)
+</div>
+<div class="tooltip" id="n93">     Bible Exodus<br>(Last cometary Venus<br>  Interaction)</div>
+<div class="tooltip" id="n94">Julius Caesar Assassination<br>(Jesus legend)<br></div>
+<div class="tooltip" id="n95">
+* <span style="background-color: #8ECAFF"> Native Americans</span> : Asia to<br> &nbsp;&nbsp; Americas
+  (<span style="background-color: black; color: white">Lizards</span> Air drop)<br>
+</div>
+<div class="tooltip" id="n96">
+* Stone Henge - <span style="background-color: white">Druids</span> <br>
+&nbsp;&nbsp;(Energy Redirector)<br>
+* North Africa Green and Fertile <br>
+* Oak Island TDARM (placed by <span style="background-color: black; color: white">Lizards</span>) <br>
+* Invention of Agriculture
+</div>
+<div class="tooltip" id="n97">Original Freemasons as overseers<br>of status of Quorum - 33rd degree <br>is same as today</div>
+<div class="tooltip" id="n98">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rome Built<br>
+ (<span style="background-color: white">Steppes Warriors</span> & Locals)
+</div>
+<div class="tooltip" id="n99">6000 BCE</div>
+<div class="tooltip" id="n100">* City of Tiahuanaco <br>&nbsp;&nbsp; Built By (<span style="background-color: black; color: white">Lizards</span> & Humans)<br>
+* Nephilim died off
+</div>
+<div class="tooltip" id="n101">
+* Eruption of Thera<br>
+* Exodus from Crete<br>
+* Another <span style="background-color: white">Aryan</span> Migration<br> to India?
+</html>
+</div>
+<div class="tooltip" id="n102">Avebury Henge</div>
+<div class="tooltip" id="n103">2200 BCE</div>
+<div class="tooltip" id="n104">4233 BCE</div>
+<div class="tooltip" id="n105">Countries from Illiad & Odessey in Europe<br>
+&nbsp;&nbsp;  "<i>(Where Troy once stood)</i>"
+</div>
+<div class="tooltip" id="n106">         Pompeii<br>(Vesuvius Eruption)</div>
+<div class="tooltip" id="n107">1350 AD</div>
+<div class="tooltip" id="n108">1953 AD</div>
+<div class="tooltip" id="n109">2014 AD</div>
+<div class="tooltip" id="n110">before 564AD dummy Yrs</div>
+<div class="tooltip" id="n111">564 AD</div>
+<div class="tooltip" id="n112">700 AD</div>
+<div class="tooltip" id="n113">US Govt.: Fake Treaty<br>
+ with <span style="background-color: black; color: white">Aliens</span>
+</div>
+<div class="tooltip" id="n114">Oldest Russian Language</div>
+<div class="tooltip" id="n115">Paleo-Eskimo flash freeze<br>extinction (Lived for 4K years)</div>
+<div class="tooltip" id="n116">* Rome Burning (Comet) & Dark Ages<br>* Brahminical switch to Vegetarianism<br>* Last Decline of Giants</div>
+<div class="tooltip" id="n117">Year 0 of new Wave Cycle</div>
+<div class="tooltip" id="n118">56 AD</div>
+<div class="tooltip" id="n119">2nd dummy</div>
+<div class="tooltip" id="n120">470 Dummy Years<br>Addition in the <br>Historical Chronology </div>
+<div class="tooltip" id="n121">1100 AD</div>
+<div class="tooltip" id="n122">* West Europe Dark Age<br>  (Comet Fragement Impact)<br>* 5000 yr. old Supernova <br>   (Crab Nebula) became visible </div>
+<div class="tooltip" id="n123">Comets of 1830's,<br>Planetary stress &<br>Window Fallers</div>
+<div class="tooltip" id="n124">Oak Island TDARM pit dug</div>
+<div class="tooltip" id="n125">US Govt.: Relaization of<br>               Alien Tickery</div>
+<div class="tooltip" id="n126">Roswell Accident</div>
+<div class="tooltip" id="n127">1500 AD</div>
+<div class="tooltip" id="n128">1830 AD</div>
+<div class="tooltip" id="n129">1947 AD</div>
+<div class="tooltip" id="n130">1972 AD</div>
+<div class="tooltip" id="n131">banner_gray_1</div>
+<div class="tooltip" id="n132">banner_pink_2</div>
+<div class="tooltip" id="n133">banner_purple_1</div>
+<div class="tooltip" id="n134">banner_pink_2</div>
+<div class="tooltip" id="n135">Gobekli Tepe</div>
+<div class="tooltip" id="n136">banner_green_1</div>
+<div class="tooltip" id="n137">banner_pink_1</div>
+<div class="tooltip" id="n138">banner_pink_3</div>
+<div class="tooltip" id="n139">banner_pink_3</div>
+<div class="tooltip" id="n140">banner_purple_2</div>
+<div class="tooltip" id="n141">1302 AD</div>
+<div class="tooltip" id="n142">Addition of Libra to 11 house<br>Zodiac</div>
+  </div>
+  </div>
+    <div class="right-pane" id="rightPane">
+      <iframe id="myIframe" width="100%" height="100%" src=""></iframe>
     </div>
-    <div class="resizer" id="resizer"></div>
-    <div class="right-pane">
-        <!-- Additional content can go here -->
+</div>
 
-            <iframe id="myIframe" width="100%" height="100%" src=""></iframe>
-        </div>
-    </div>
-
-    <script type="text/javascript">
-	
-    
+<script type="text/javascript">
         var urlHistory = [];
         var currentIndex = -1;
 
@@ -139,8 +596,7 @@
 
         let tooltip = null;
         document.onmousemove = updateTooltip;
-
-        function updateTooltip(e) {
+function updateTooltip(e) {
             if (tooltip) {
                 const x = e.pageX;
                 const y = e.pageY;
@@ -156,39 +612,58 @@
                 tooltip.style.left = `${newX}px`;
                 tooltip.style.top = `${newY}px`;
             }
-        }
 
+}
         function showTooltip(id, event) {
             tooltip = document.getElementById(id);
-            updateTooltip(event);
+            updateTooltip(event);	    
+    	   const contentDiv = document.getElementById(id); // The hidden content div (e.g., "n16")
+
+    		// Dynamically set the HTML content
+    		tooltip.innerHTML = contentDiv.innerHTML
             tooltip.style.display = "block";
         }
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+function resizeMap() {
+  const spinner = document.getElementById('inlineSpinner');
+  spinner.classList.add('visible');
 
-        function hideTooltip() {
-            if (tooltip) {
-                tooltip.style.display = "none";
-            }
-        }
+  setTimeout(() => {
+    const img = document.getElementById('myImage');
+    const areas = document.getElementsByTagName('area');
+    const imgWidth = img.naturalWidth;
+    const imgHeight = img.naturalHeight;
+    const displayedWidth = img.clientWidth;
+    const displayedHeight = img.clientHeight;
+    const widthRatio = displayedWidth / imgWidth;
+    const heightRatio = displayedHeight / imgHeight;
 
-        function resizeMap() {
-            const img = document.getElementById('myImage');
-            const areas = document.getElementsByTagName('area');
-            const imgWidth = img.naturalWidth;
-            const imgHeight = img.naturalHeight;
-            const displayedWidth = img.clientWidth;
-            const displayedHeight = img.clientHeight;
-            const widthRatio = displayedWidth / imgWidth;
-            const heightRatio = displayedHeight / imgHeight;
+    for (let area of areas) {
+      let coords = area.dataset.originalCoords.split(',').map(Number);
+      let newCoords = coords.map((coord, index) => {
+        return index % 2 === 0
+          ? Math.round(coord * widthRatio)
+          : Math.round(coord * heightRatio);
+      });
+      area.coords = newCoords.join(',');
+    }
 
-            for (let area of areas) {
-                let coords = area.dataset.originalCoords.split(',').map(Number);
-                let newCoords = coords.map((coord, index) => {
-                    return index % 2 === 0 ? Math.round(coord * widthRatio) : Math.round(coord * heightRatio);
-                });
-                area.coords = newCoords.join(',');
-            }
-        }
+    spinner.classList.remove('visible');
+  }, 300); // Slight delay to show animation
+}
 
+function debounce(func, delay) {
+  let timeout;
+  return function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, delay);
+  };
+}
+const debouncedResizeMap = debounce(resizeMap, 200);
         window.onload = function() {
             const areas = document.getElementsByTagName('area');
             for (let area of areas) {
@@ -199,34 +674,61 @@
 
         window.onresize = resizeMap;
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const resizer = document.getElementById('resizer');
-            const leftPane = document.getElementById('leftPane');
-            let isResizing = false;
+    document.addEventListener('DOMContentLoaded', function () {
+      const leftPane = document.getElementById('leftPane');
+      const increaseBtn = document.getElementById('increaseWidth');
+      const decreaseBtn = document.getElementById('decreaseWidth');
+      const resetBtn = document.getElementById('resetWidth');
+      const step = 50;
+      const minWidth = 200;
+      const maxWidth = window.innerWidth - 100;
+      const defaultWidth = 1000;
+	  
+		tippy('[data-tippy-content]', {
+		  animation: 'scale',
+		  theme: 'light',
+		  delay: [100, 50],
+		  allowHTML: true,
+		});
+      increaseBtn.addEventListener('click', () => {
+        let currentWidth = leftPane.offsetWidth;
+        let newWidth = Math.min(currentWidth + step, maxWidth);
+        leftPane.style.width = newWidth + 'px';
+  debouncedResizeMap(); // Add this line
+      });
 
-            resizer.addEventListener('mousedown', function(e) {
-                isResizing = true;
-                document.body.classList.add('resizing');
-            });
+      decreaseBtn.addEventListener('click', () => {
+        let currentWidth = leftPane.offsetWidth;
+        let newWidth = Math.max(currentWidth - step, minWidth);
+        leftPane.style.width = newWidth + 'px';
+  debouncedResizeMap(); // Add this line
+      });
 
-            document.addEventListener('mousemove', function(e) {
-                if (!isResizing) return;
-
-                let newWidth = e.clientX - leftPane.offsetLeft;
-                if (newWidth < 200) newWidth = 200; // Minimum width
-                if (newWidth > window.innerWidth - 20) newWidth = window.innerWidth - 20; // Maximum width
-
-                leftPane.style.width = newWidth + 'px';
-                resizeMap();
-            });
-
-            document.addEventListener('mouseup', function(e) {
-                isResizing = false;
-                document.body.classList.remove('resizing');
-            });
-        });
-    </script>
-
+      resetBtn.addEventListener('click', () => {
+        leftPane.style.width = defaultWidth + 'px';
+  debouncedResizeMap(); // Add this line
+      });
+    });
 	
+	function downloadPDFfromDrive(fileId) {
+  const link = document.createElement('a');
+  const fileId1 = '1OvlyzNFpr7LPigliyVFiCjsskhAlokUa' ;
+  link.href = `https://drive.google.com/uc?export=download&id=${fileId1}`;
+  link.download = ''; // Optional: specify filename
+  link.target = '_blank'; // Opens in new tab if download fails
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  const iframe = document.getElementById('myIframe');
+  if (!sessionStorage.getItem('initialLoadDone')) {
+    iframe.src = 'https://casscosmology.netlify.app';
+    sessionStorage.setItem('initialLoadDone', 'true');
+  }
+});
+  </script>
+
 </body>
 </html>
