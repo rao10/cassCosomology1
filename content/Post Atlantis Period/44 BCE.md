@@ -1,5 +1,6 @@
-### 44 BCE
-Julius Caesar Assassination (Jesus legend)
+> [!abstract] Events
+> - Julius Caesar Assassination that is used in creation of Jesus legend.
+### Session Quotes
 
 > [Session Date: Sep 07, 2013](https://cassiopaea.org/forum/threads/session-7-september-2013.32366/post-440846)
 >
