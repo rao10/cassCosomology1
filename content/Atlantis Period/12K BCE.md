@@ -1,5 +1,13 @@
-### 12K BCE
-* Machu Picchu
+> [!abstract] Events
+> - Machu Picchu.
+> - comets and migration to underground.
+> - Extinction of Clovis Race.
+> - Cart Ruts from Malta.
+> - Arrival of Nephilim (one reference).
+> - Origin of Piri Ries Map.
+### Session Quotes
+
+#### Machu Picchu
 
 > [Session Date: Aug 29, 1998](https://cassiopaea.org/forum/threads/session-29-august-1998.53734/)
 >
@@ -7,132 +15,14 @@ Q: And that is why the Dark Ages are Dark. The Catholic Church destroyed everyth
 A: Close. 
 Q: Can you tell us when Macchu Picchu was built? 
 A: 12009 BC. 
-
-* comets and migration to underground
+#### Comets and migration to underground
 
 > [Session Date: Sep 23,  2023](https://cassiopaea.org/forum/threads/session-23-september-2023.53808/)
 >
 > (Approaching Infinity) What was the initial impetus for going underground 14,000 years ago?
 > 
 > A: Comets.
-
-> [Session Date: May 04, 1996](https://cassiopaea.org/forum/index.php/topic,34920.msg496566.html)
->
-> Q: (L) One of the things we talked about the last time T*** was here was about the underground bases and military interference in civilian affairs and civilian interface with military affairs. What further can you 
-> tell us about this? 
-> A: Ask specific questions, please. 
-> Q: (L) One of the questions we were dealing with was the use of warfare to create situations in which bodies could be taken... 
-> A: Warfare has many "uses." 
-> Q: (L) Could you list for us some of the most common uses of warfare? 
-> A: Generation of environment to facilitate inconspicuous replacement of gene pool. Factors in paradigm shift through stimulation of conception activity, replacement of key personnel according to frequency 
-> vibration prereadings... 
-> Q: (TH) Who or what in the gene pool is being replaced? (TK) Whoever they want replaced. (L) Well, you know how it is in the movies... everybody is indiscriminately making love before they go into battle... 
-> (F) Yes... they said 'factors in paradigm shift through stimulation of conception activity...' (L) 'Replacement of key personnel according to frequency vibration pre-readings...' Okay: do you mean to say that war... 
-> A: Creates "environment" for unnoticed genetic modifications because of greatly heightened exchange of both physical and ethereal factors. 
-> Q: (L) What do you mean by "replacement of key personnel?" Key personnel according to whose definition? 
-> A: 4th density STS. 
-> Q: (L) Are these key personnel human? 
-> A: Yes. 
-> Q: (L) When you say replacement, do you mean something as simple as someone dying, such as a head of state, and being replaced by another person who comes to power? That would be the simplest scenario 
-> that would fit this explanation. 
-> A: Your scenario is not simple. 
-> Q: (L) I mean simple in terms of the machinations... 
-> A: Both. 
-> Q: (L) Would it also be that key personnel could also be replaced as in duplication? 
-> A: Yes. And removing to secret activity realm. Enough wars have taken place to effectively create entire new "underground race" of humans, both from direct capture followed by "reeducation," and spawning 
-> activity using these persons and others. 
-> Q: (L) What do you mean by spawning activity? 
-> A: Those captured have reproduced offspring, these never having seen your world. 
-> Q: (L) Are you saying... (TK) They have given birth and these children have never seen our world... (L) How can an entire race of people, or groups of people, live under the surface of this planet, without the 
-> whole 6 billion of the rest of us on top, or at least a large number, realizing that there is anything going on? This is so wild an idea... 
-> A: No. How much space exists underground, as opposed to that on the surface? 
-> Q: (L) A lot, I suppose. You aren't saying that the earth is hollow, are you? 
-> A: No, not exactly. 
-> Q: (L) Well, how deep is the deepest of these underground cities? 
-> A: 3,108 miles. 
-> Q: (L) That's pretty deep! But wouldn't it be too hot at that depth? 
-> A: No. Temperature averages 68 degrees F. 
-> Q: (TK) That's pretty comfortable! (L) How do they have light? 
-> A: Magnetic resonance. 
-> Q: (L) Well, aren't they subject to being crushed by earthquakes? 
-> A: No, earthquakes are not felt deep underground!! 
-> Q: (L) Does any of this underground civilization activity have any relation to this massive underground base the Russians are building? 
-> A: No. 
-> Q: (TK) Is any of this under the ocean? 
-> A: Yes. 
-> Q: (TK) Well, we'll never explore all of what is under the ocean. (L) It just staggers the mind to think about it. What do they want these people for? 
-> A: To replace you. 
-> Q: (TK) And why? Because they can control them better. Right? 
-> A: Completely. 
-> Q: (L) Do these people being bred and raised in these underground cities have souls? 
-> A: Yes, most. 
-> Q: (TK) Are they just like us only raised differently? 
-> A: More complicated than that. 
-> Q: (L) How long have they been doing this? 
-> A: 14,000 years, approximately. 
-> Q: (L) If they have been doing it that long, obviously the ones they have taken at the beginning have croaked and are of no use to replace anybody on the earth unless they have been replacing people from time to 
-> time for various reasons... 
-> A: No, their technology makes yours look like Neanderthal by comparison! Hibernation tubes... One heartbeat per hour, for example. 
-> Q: (TH) That means that for every year we live, they would live 4200 years... (L) Does any of this have anything to do with that crazy pit at Oak Island? 
-> A: In an offhand way. 
-> Q: (L) How do we fit into all of this? (TK) We don't! 
-> A: You have been the "preparation committee." 
-> Q: (L) What have we been doing? Is it part of the plan for us to destroy the planet, destroy the ozone layer, pollute the seas and so forth to make it more habitable for them? 
-> A: Those things are inconsequential and easily repaired. 
-> Q: (TK) With their technology, they can fix all of that. (L) This is really horrible, you know! To think of all this... (TK) Apparently, from what I am understanding, they can't just come in and wipe us out and 
-> replace us, because the 'rules' won't allow it. 
-> A: Yet the natural cycles within the framework of the natural order of things will allow all these things to fall into place. 
-> Q: (L) Is there some law within the realm of these beings, sort of like the law of gravity, that prevents them from just coming in and taking over? 
-> A: No. 
-> Q: (TK) I don't think it is like the law of gravity... 
-> A: What "law" is there that inhibits you from manipulating 2nd density beings at will?!? 
-> Q: (L) Well, I don't go out and deliberately hurt or manipulate anything or anybody. (TK) Of course, in our handling of these 'critters,' we are conserving them in some ways so that we will have an ongoing food 
-> supply... (TK) I think there are rules to the game. It's like a chess game. They can't just come in and change things, it has to progress in some way. But, there are loopholes and they can sneak in and manipulate and 
-> get away with some things... (TH) Then, there aren't rules - there are just guidelines. 
-> A: Two important points there: 1) When we said "you," we meant 3rd density collectively. 2) You missed our statement about the natural cycle and order of things almost completely. We suggest you reread and 
-> ponder... Also, what if your race is manipulated to destroy yourselves, or, just hang around until the next natural cataclysm? 
-> Q: (TK) Well, it seems like there is another side that is trying to prevent them from gaining control. (L) Well, from what I understand, the only thing the good guys are able to do is, because of free will, they have 
-> to wait to be asked for help, and the only they thing they can really do is give information. (F) Well, this is valuable if used by the right people at the right time. (TK) You have to come up with the right questions, 
-> too. You have to have enough information to be able to come up with the right questions. I am sure the information is there. You have one group with all these people underground and they want to take over the 
-> planet. This group likes being 4th density - they don't want to advance. They want to block advancement. Then, you have the group that wants to advance; they want the natural order to proceed. This negative 
-> group wants to stay there and keep everyone they can there. (L) And because they deplete themselves and diminish in numbers, they keep having to supply their needs and existence. (TK) If, by some odd chance, 
-> the earth is the only place where people come to advance, then sooner or later it is going to stop, if these other guys take over, then it will just stop... implode. (TH) I know! The earth is a 4th density theme park! 
-> (L) We already thought of that... we all have an 'E' ticket ride! (TK) Obviously we have the information, but we haven't really dug deep enough so that we don't know the questions that we need to ask. Is this true? 
-> A: No. 
-> Q: (TK) Is what I was saying close to the truth? 
-> A: Yes. Total truth is elusive. 
-> Q: (TK) So, what I said was the gist of what is going on here. So, we have to figure out what we are supposed to do so that the earth can be maintained... 
-> A: You will do what you will do. 
-> Q: (TK) This is true. 
-> A: Do you, in general, control 2nd density beings on earth? 
-> Q: (L) Yes. 
-> A: So, what is "fair" about that? 
-> Q: (L) Nothing. 
-> A: Okay, so what is the difference?!?!??? 
-> Q: (TK) So, basically, we control 2nd density, and 4th density controls us. There are the good guys and bad guys. (L) And we will do what we will do. Either we choose to align ourselves with the good guys, or 
-> with the bad guys. 
-> A: It's up to you. 
-> Q: (TK) However, if too many people align themselves with the bad guys, then the balance tips in their favor, and there is no more advancement, so there has to be education so that people will know... 
-> A: T***, you are close, but you are missing the point. 
-> Q: (L) What is the point? 
-> A: The point is, there "has to be" nothing. You will do what you will do. You choose. We have told you this repeatedly, but you still suffer from self-centered perspective. 
-> Q: (TK) Everybody is worried about themselves. They all want to be saved and not worry about others. 
-> A: More to the point, everybody in an STS realm views themselves as somehow "special, chosen, or protected." This is simply not so!! 
-> Q: (TK) What is going to happen, is going to happen. The people... 
-> A: The body does not matter. It is the soul that either progresses or digresses, just ask S****! 
-> Q: (L) Did S***** progress or digress? 
-> A: Open. 
-> Q: (L) So, in other words, we could just sit around and live our lives and have a good time and not worry about a damn thing. Is that the point? 
-> A: No. 
-> Q: (L) It's our choices? 
-> A: Yes. 
-> Q: (TK) The point is it's going to happen... 
-> A: But, nobody is there to intervene on your behalf as many would like to believe. 
-> Q: (L) So, we are here on this planet, and we will either make it or we won't, just like Dorothy and Toto in Oz, based on our own ability to figure it out, to overcome the odds, the witch, monkeys and soldiers... 
-> (TK) Maybe what they are trying to do is give people the information, or make the information available so that people can make the choice, do they want to stay... 
-> A: We are not "trying" to do anything. We are here to answer questions if asked. We cannot interfere.
-
-* Extinction of Clovis Race
+#### Extinction of Clovis Race
 
 > [Session Date: Dec 29, 2018](https://cassiopaea.org/forum/threads/session-29-dec-2018.46645/post-784946)
 >
@@ -153,8 +43,8 @@ A: 12009 BC.
 > (Joe) The thing that makes the Greenland crater significant is that up until now, science has rejected the idea that the Clovis civilization was wiped out by space rocks because there was no evident crater. And now there's a crater! So, that's pretty significant that this discovery happened right now. They're going to have to accept that 12,000 years ago or whatever, almost all life was wiped out by space rocks.
 > 
 > A: And what have we been saying?
+#### Nephilim Arrival (One Reference)
 
-* Nephalim
 > [Session Date: Oct 22, 1994](https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html)
 > Q: (L) Tell me about the Nephilim.
 > 
@@ -180,7 +70,7 @@ A: 12009 BC.
 > 
 > A: This planet was located in the Orion complex.
 
-Cart Ruts from Malta
+#### Cart Ruts from Malta
 
 > [Session Date: May 27, 2000](https://cassiopaea.org/forum/threads/session-27-may-2000.20533/)
 >
@@ -254,7 +144,7 @@ Cart Ruts from Malta
 > 
 > Q:  (L)  Well, archaeologists like to explain them as cart ruts.  But to dig such ruts 72 cm deep would take a VERY long time.  And there is no consistent size or depth or direction, so that they are completely unexplainable as cart ruts.  Yes, there ARE places where you see real cart ruts.  In ancient Rome, they placed stones in the streets for pedestrians to walk across because the streets were often muddy or full of waste or water.  But the stones were placed at specific intervals to accommodate a standard axle width.  Here, there is NO standard!  There is not standard axle width, there is no standard depth, there is no standard anything.  Another explanation offered was that the Maltese were "dragging" things with something like the Native American travois deal.  Get real!  72 cm deep in solid rock?!  That's a LOT of dragging !  Another explanation was that the ruts were used to contain rolling balls on which things were slid along the ground.  Only problem is that there is no consistent width of individual ruts, and many of them are incised as "V's" in the rock, not rounded as would be thought if balls were being used.  None of the explanations make any sense.  But, let's move on. 
 
-Origin of Piri Ries Map
+#### Origin of Piri Ries Map
 
 > [Session Date: Dec 05, 1998](https://cassiopaea.org/forum/index.php/topic,26588.msg319780.html)
 > 

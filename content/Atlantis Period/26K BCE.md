@@ -1,8 +1,8 @@
-### 26K BCE
-
-* cometary bombardment.
-* Taupo supervolcano(NZ) eruption
-*  Arrival of the STS Orion headquarters
+> [!abstract] Events
+> - cometary bombardment.
+> - Taupo supervolcano(NZ) eruption.
+> - Arrival of the STS Orion headquarters.
+### Session Quotes
 
 > [Session Date: Mar 09, 2024](https://cassiopaea.org/forum/threads/session-9-march-2024.54385/)
 >

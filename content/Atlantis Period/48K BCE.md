@@ -1,7 +1,11 @@
-### 48K BCE
+> [!abstract] Events
+> - Atlantis 1st Destruction.
+> - India: Nuclear War between Paranthas and Kantekanians & 50% destruction.
+> - Paranthas(Ancestors of Dravidians) extinction  due to cataclysm (F-M89 Haplogroup).
+> - Historical Rama as Atlantean High priest & Legend of Phoenix.
+### Session Quotes
 
-* Atlantis 1st Destruction - 5 pieces
-
+#### Atlantis 1st Destruction
 
 > [Session Date: Jan 13, 2024](https://cassiopaea.org/forum/threads/session-13-january-2024.54173/)
 >
@@ -20,7 +24,7 @@
 > Q: (Joe) A war 50,000 years ago.
 > 
 
-* India: Nuclear War between Paranthas and Kantekanians & 50% destruction
+#### India: Nuclear War between Paranthas and Kantekanians & 50% destruction
 
 > [May 31, 1997](https://cassiopaea.org/forum/index.php/topic,26584.msg319768.html)
 >

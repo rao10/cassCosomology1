@@ -1,6 +1,10 @@
-### 8K BCE
+> [!abstract] Events
+> - Stonehenge - Built by Druids (Energy Redirector).
+> - Oak Island TDARM.
+> - Invention of Agriculture.
+### Session Quotes
 
-Stonehenge - Built by Druids (Energy Redirector)
+#### Stonehenge - Built by Druids (Energy Redirector)
 
 > [Session Date: Aug 22, 1998](https://cassiopaea.org/forum/threads/session-22-august-1998.53714/)
 >
@@ -69,21 +73,17 @@ Stonehenge - Built by Druids (Energy Redirector)
 > 
 > A: Learn. Laura will find answer through discovery.
 
-
 > [Session Date: Nov 09, 1994](https://cassiopaea.org/forum/index.php/topic,28376.msg353145.html)
 > Q: (L) In many ancient ruins there are found certain symbols which interest me, specifically the coil or spiral which seems to be ubiquitous throughout the world. This is also very similar to one of the Reiki symbols. What is the origin and meaning of this symbol?
 > 
 > A: Energy collector translevel; stonehenge was one. Stonehenge is a coil. The missing stones form a coil arrangement. People have been "zapped" at stonehenge.
-
-
 
 > [Session Date: Mar 04, 1995](https://cassiopaea.org/forum/index.php/topic,26049.msg310561.html)
 >
 > Q: (L) How long ago was North Africa green and fertile and what geologic factors created the state in which we find it today?
 > 
 > A: Weather changes in 3rd density 10,000 years ago.
-
-Oak Island TDARM
+#### Oak Island TDARM
 
 > [Session Date: Dec 10, 1994](http://www.cassiopaea.org/forum/index.php?topic=21613.msg226768)
 > Q: (L) What is buried on Oak Island?

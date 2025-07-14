@@ -1,6 +1,13 @@
-### 10K Frame
+> [!abstract] Events
+> - Younger Dryas (Flash freezing of Mammoths).
+> - 7 Degrees Geographical axis tilt.
+> - Noah's Flood Myth (Mars, Comets).
+> - Tower of Babel.
+> - Final Breakup of Atlantis (recovered).
+> - Migration to Canary Island, Egypt, Inca.
+### Session Quotes
 
-* Younger Dryas (Flash freezing of Mammoths)
+#### Younger Dryas (Flash freezing of Mammoths).
 
 > [Session Date: Apr 16, 2016](https://cassiopaea.org/forum/threads/session-16-april-2016.41489/post-644509)
 >
@@ -15,8 +22,7 @@
 > Q: (Pierre) That makes sense. So, they all got flash-frozen, but the hit also shifted the geographic pole and brought Siberia to higher latitudes. So, they stayed frozen there, but the flash-frozen animals in Northern America ended up in lower latitudes away from the poles, and they defrosted.
 > 
 > A: Yes
-
-* 7 Degrees Geographical axis tilt
+#### 7 Degrees Geographical axis tilt
 
 > [Session Date: May 07, 2016](https://cassiopaea.org/forum/threads/session-7-may-2016.41701/post-648988)
 >
@@ -54,7 +60,7 @@
 > 
 > A: Before.
 
-* Noah's Flood Myth (Mars, Comets)
+#### Noah's Flood Myth (Mars, Comets)
 
 > [Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
 > Q: (L) And Noah's flood occurred 12,388 B.C., is that correct?
@@ -85,7 +91,6 @@
 > Q: (L) And when Mars came by it overloaded the earth's atmosphere and it fell as a deluge, correct?
 > 
 > A: Close.
-
 
 > [Sep 16,  2017](https://cassiopaea.org/forum/threads/session-16-september-2017.44841/post-733291)
 >
@@ -161,7 +166,7 @@
 > 
 > (Joe) Planetary alignments.
 
-* Tower of Babel
+#### Tower of Babel
 
 > [Session Date: Oct 05, 1994](https://cassiopaea.org/forum/threads/session-5-october-1994.22347/)
 > Q: (L) What was the event a hundred or so years after the flood of Noah that was described as the confusing of languages, or the tower of Babel?
@@ -196,8 +201,7 @@
 > 
 > A: Partly.
 
-* Final Breakup of Atlantis (recovered)
-* Migration to Canary Island, Egypt, Inca
+#### Final Breakup of Atlantis (recovered) and Migration to Canary Island, Egypt, Inca
 
 > [Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
 > Q: (L) Where do the Basques come from?
@@ -271,7 +275,7 @@
 > 
 > A: No.
 
-* End of Longevity Gene ( 2500 yes (7%), rest 800 yrs)
+#### End of Longevity Gene (2500 yes (7%), rest 800 yrs)
 
 > [Session Date: Jul 06, 2024](https://cassiopaea.org/forum/threads/session-6-july-2024.54848/)
 >

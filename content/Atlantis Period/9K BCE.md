@@ -1,5 +1,6 @@
-### 9K BCE
-Last Arrival of Nephalim (15ft & Presented as "Sons" of God)
+> [!abstract] Events
+> - Last Arrival of Nephalim (15ft & Presented as "Sons" of God)- another reference.
+### Session Quotes
 
 > [Session Date: Nov 02, 1994](https://cassiopaea.org/forum/index.php/topic,28371.msg353139.html)
 > 

@@ -1,5 +1,11 @@
-### 77K BCE
-* Explosition of 5th planet Kantek(to Asteroid belt)
+> [!abstract] Events
+> - Explosition of 5th planet Kantek(to Asteroid belt).
+> - Migration of Kantekanian (ancestors of Celts, Aryans) to Earth through Portal at Kiev ( Lizard Air drop & Merkaba).
+> - 200 years coexistence with Neanderthal.
+> - Neanderthal taken to Other planets by 4D Lizards.
+### Session Quotes
+
+#### Explosition of 5th planet Kantek(to Asteroid belt)
 
 > [Sep 30, 1994](https://cassiopaea.org/forum/index.php/topic,25860.msg308046.html)
 >
@@ -14,16 +20,6 @@
 > Q: (L) When did that planet break apart into the asteroid belt.
 > 
 > A: 79 thousand years ago approximately.
-
-* Cassiopaea.org is a forum dedicated to sharing information and discussions related to the **Cassiopaea channelings**, which are communications received by a group of individuals claiming to channel messages from higher-dimensional beings.
-
-According to Cassiopaea material, the asteroid belt was formed around **79000 BCE** when a planet called **Kantek**, located between Mars and Jupiter, was destroyed by the psychic energy of its inhabitants [A](https://cassiopaea.org/forum/threads/the-asteroid-belts.52316/?copilot_analytics_metadata=eyJldmVudEluZm9fY29udmVyc2F0aW9uSWQiOiJDbnUyc0pWaDV6MlVGcUNXUjJUNUwiLCJldmVudEluZm9fY2xpY2tTb3VyY2UiOiJjaXRhdGlvbkxpbmsiLCJldmVudEluZm9fbWVzc2FnZUlkIjoieWIyaEhoMkFvckZjU280M2ZWRlg1IiwiZXZlbnRJbmZvX2NsaWNrRGVzdGluYXRpb24iOiJodHRwczpcL1wvY2Fzc2lvcGFlYS5vcmdcL2ZvcnVtXC90aHJlYWRzXC90aGUtYXN0ZXJvaWQtYmVsdHMuNTIzMTZcLyJ9&citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1). Some of the inhabitants, known as the **Annunaki**, were taken to Earth by beings referred to as **Lizards** [A](https://cassiopaea.org/forum/threads/the-asteroid-belts.52316/?copilot_analytics_metadata=eyJldmVudEluZm9fY2xpY2tTb3VyY2UiOiJjaXRhdGlvbkxpbmsiLCJldmVudEluZm9fbWVzc2FnZUlkIjoieWIyaEhoMkFvckZjU280M2ZWRlg1IiwiZXZlbnRJbmZvX2NvbnZlcnNhdGlvbklkIjoiQ251MnNKVmg1ejJVRnFDV1IyVDVMIiwiZXZlbnRJbmZvX2NsaWNrRGVzdGluYXRpb24iOiJodHRwczpcL1wvY2Fzc2lvcGFlYS5vcmdcL2ZvcnVtXC90aHJlYWRzXC90aGUtYXN0ZXJvaWQtYmVsdHMuNTIzMTZcLyJ9&citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1).
-
-This theory is quite different from the mainstream scientific explanation and is part of the broader narrative shared through the Cassiopaea channelings.
-
-* Migration of Kantekanian (ancestors of Celts, Aryans) to Earth through Portal at Kiev ( Lizard Air drop & Merkaba)
-* 200 years coexistence with Neanderthal
-* Neanderthal taken to Other planets by 4D Lizards
 
 > [Session Date: Oct 05, 1994](https://cassiopaea.org/forum/threads/session-5-october-1994.22347/)
 >

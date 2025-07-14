@@ -1,7 +1,9 @@
 > [!abstract] Events
-> - Aryan Invasion of India ( Archiac sanskrit speaking Iranian Farmers) - 6249 BCE
-> - Matriarchy & Y-chromosome Bottleneck (10K to 5K BCE).
+> - Aryan Invasion of India (Iranian Farmers) - 6249 BCE
+> - Kumara Kandam Submerged - (6826 BCE?)
 ### Session Quotes
+
+#### Aryan Invasion of India.
 
 > [Session Date: Oct 20, 1994](https://cassiopaea.org/forum/index.php/topic,25984.msg309782.html)
 >
@@ -31,3 +33,18 @@
 > Q: (seek10) What is the language of Iranian farmer migrants into India around 6000 BC? Is it Sanskrit or something else?
 > 
 > A: Close to Sanskrit. But more archaic.
+#### Kumara Kandam Submerged
+
+> [Session Date: Mar 09, 2024](https://cassiopaea.org/forum/threads/session-9-march-2024.54385/)
+>
+> Q: (seek10) Is there a submerged continent/island/city called Kumara Kandam in the Indian Ocean as claimed by Ancient Tamil civilization proponents?
+> 
+> A: Close
+> 
+> Q: (seek10) If so, was it during Lemurian times or Atlantean times? Which period was it?
+> 
+> A: Later.
+> 
+> Q: (L) How about the 12,000 year-ago event?
+> 
+> A: Closer

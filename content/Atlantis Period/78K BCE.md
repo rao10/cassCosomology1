@@ -1,6 +1,6 @@
-### 78K BCE
-Comet Venus Entry into Solar System:
-Cometary Venus is a extra-solar system visitor pulled into Solar system from Comet Cluster 80,000 tears ago.  It's a wanderer from the Arcturius system, collected lot of dust and debris through its fiery long Journey through cosmos.
+> [!abstract] Events
+> - Comet Venus Entry into Solar System
+### Session Quotes
 
 >[Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
 > Q: (L) Now, the time of the passage of Venus was the time of the Exodus, is that correct? Was Venus a result of this cluster of comets?

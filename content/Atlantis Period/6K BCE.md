@@ -1,6 +1,6 @@
-### 6K BCE
-
-* City of Tiahuanaco
+> [!abstract] Events
+> - City of Tiahuanaco.
+### Session Quotes
 
 > [Session Date: Aug 05, 1995](https://cassiopaea.org/forum/index.php/topic,17617.msg159066.html)
 >

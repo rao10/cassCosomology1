@@ -1,6 +1,7 @@
-### 16K BCE
-* Start of Vedas Collection (In Transit - BMAC?)
-* Most of Vedas written in India
+> [!abstract] Events
+> - Start of Vedas Collection (In Transit - BMAC?).
+> - Most of Vedas written in India.
+### Session Quotes
 
 > [Session Date: Aug 12, 1995](https://cassiopaea.org/forum/index.php/topic,34875.msg495806.html)
 >

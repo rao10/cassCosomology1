@@ -1,5 +1,6 @@
-### 72K BCE
-Lizard Frozen in Time to alter Human Affairs
+> [!abstract] Events
+> - Lizard Frozen in Time to alter Human Affairs
+### Session Quotes
 
 > [Session Date: Oct 22, 1994](https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html)
 > Q: (L) Going back to the beings that absorb nutrients through their pores, what kind of beings are they?

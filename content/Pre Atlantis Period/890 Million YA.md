@@ -1,3 +1,7 @@
+> [!abstract] Events
+> - Formation of Oort Cloud [comet cluster](https://publish.obsidian.md/cassquotes/Casswiki/Cassiopaean+Experiment/Comet+cluster) (Current Periodicity: 3600 years).
+### Session Quotes
+
 Oort Cloud [Comet Cluster](https://publish.obsidian.md/cassquotes/Casswiki/Cassiopaean+Experiment/Comet+cluster) First Entry (Current Periodicity: 3600 years):
 
 Pictograph , spirograph biggest one being 900 miles 
