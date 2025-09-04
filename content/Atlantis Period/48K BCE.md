@@ -101,7 +101,7 @@
 > A: Ancient Indian destruction and rebuilding.
 #### Atlantean pyramids on Mars 
 
-> [Session Date: Feb 25, 2023](https://cassiopaea.org/forum/threads/session-25-february-2023.53089/)
+> <a href="https://cassiopaea.org/forum/threads/session-25-february-2023.53089/" target="_blank" rel="noopener noreferrer"> Session Date: Feb 25, 2023</a>
 > 
 > Q: (Ursus Minor) When did the Atlanteans start building pyramids on Mars?
 > 

@@ -72,7 +72,7 @@
 > 
 > (Chu) But according to Fomenko it was later.
 
-> [Session Date: Sept 18,  2021](https://cassiopaea.org/forum/threads/session-18-september-2021.51079/)
+> <a href="https://cassiopaea.org/forum/threads/session-18-september-2021.51079/" target="_blank" rel="noopener noreferrer">Session Date: Sept 18, 2021</a>
 >
 > (Pierre) I'm trying to reconcile the AD timeline of history and the BP timeline, ice cores and dendrochronology. There seems to be one matching marker at 536 AD - a year without summer, very cold, very bad weather - seemingly matching the 1500 BP mark with a converging cooling all over the planet revealed by ice cores and tree rings. So my question is: Is it a real match?
 > 

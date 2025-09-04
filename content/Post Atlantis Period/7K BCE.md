@@ -29,7 +29,7 @@
 > 
 > A: Yes
 
-> [Session Date: Feb. 25,  2023](https://cassiopaea.org/forum/threads/session-25-february-2023.53089/)
+> <a href="https://cassiopaea.org/forum/threads/session-25-february-2023.53089/" target="_blank" rel="noopener noreferrer"> Session Date: Feb. 25, 2023</a>
 > 
 > Q: (seek10) What is the language of Iranian farmer migrants into India around 6000 BC? Is it Sanskrit or something else?
 > 

@@ -118,7 +118,7 @@
 > 
 > A: Close.
 
-> [Sep 16,  2017](https://cassiopaea.org/forum/threads/session-16-september-2017.44841/post-733291)
+> <a href="https://cassiopaea.org/forum/threads/session-16-september-2017.44841/post-733291" target="_blank" rel="noopener noreferrer"> Session Date: Sep 16 2017</a>
 >
 > (Pierre) Let's shift to a more cheerful topic: cometary bombardments. So we discussed the death of the woolly mammoths due to a cometary bombardment. I would like to know about the transfer of water from Mars to planet Earth, when did it occur relative to this cometary bombardment? How many years before, how many years after?
 > 
@@ -290,7 +290,7 @@
 > A: Americas. Inca. Aztec. Maya. Hopi Tribe. Pima tribe. 
 #### The war of 10 kings (Mahabharata)
 
-> [Session Date: Feb 25,  2023](https://cassiopaea.org/forum/threads/session-25-february-2023.53089/)
+> <a href="https://cassiopaea.org/forum/threads/session-25-february-2023.53089/" target="_blank" rel="noopener noreferrer"> Session Date: Feb 25, 2023</a>
 > 
 > Q: (Sid) Has "the War of 10 Kings" been used as a prototype for the Mahabharata war?
 > 
@@ -565,7 +565,7 @@
 
 #### Construction of Gobekli Tepe (Surviving Pyramid builders)
 > 
-> [Session Date: April 26 2025](https://cassiopaea.org/forum/threads/session-26-april-2025.55829/)
+> <a href="https://cassiopaea.org/forum/threads/session-26-april-2025.55829/" target="_blank" rel="noopener noreferrer">Session Date: April 26 2025</a>
 > 
 > (Ryan) Is the hypothesized dating for the earliest construction of Gobekli Tepe (9700 - 9500 BCE) approximately correct?
 > 

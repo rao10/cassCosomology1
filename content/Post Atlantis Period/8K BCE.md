@@ -33,6 +33,7 @@
 > A: No, yes.
 
 > <a href="https://cassiopaea.org/forum/index.php/topic,26047.msg310546.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 23 1994</a>
+> 
 > Q: (L) Who built Stonehenge?
 > 
 > A: Druids.
@@ -74,6 +75,7 @@
 > A: Learn. Laura will find answer through discovery.
 
 > <a href="https://cassiopaea.org/forum/index.php/topic,28376.msg353145.html" target="_blank" rel="noopener noreferrer"> Session Date: Nov 09 1994</a>
+> 
 > Q: (L) In many ancient ruins there are found certain symbols which interest me, specifically the coil or spiral which seems to be ubiquitous throughout the world. This is also very similar to one of the Reiki symbols. What is the origin and meaning of this symbol?
 > 
 > A: Energy collector translevel; stonehenge was one. Stonehenge is a coil. The missing stones form a coil arrangement. People have been "zapped" at stonehenge.
@@ -86,6 +88,7 @@
 #### Oak Island TDARM
 
 > <a href="http://www.cassiopaea.org/forum/index.php?topic=21613.msg226768" target="_blank" rel="noopener noreferrer"> Session Date: Dec 10 1994</a>
+> 
 > Q: (L) What is buried on Oak Island?
 > 
 > A: Regenerator.

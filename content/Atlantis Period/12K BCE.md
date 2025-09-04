@@ -20,7 +20,8 @@
 > A: 12009 BC. 
 #### Comets and migration to underground
 
-> [Session Date: Sep 23,  2023](https://cassiopaea.org/forum/threads/session-23-september-2023.53808/)
+
+><a href="https://cassiopaea.org/forum/threads/session-23-september-2023.53808/" target="_blank" rel="noopener noreferrer">Session Date: Sep 23, 2023</a>
 >
 > (Approaching Infinity) What was the initial impetus for going underground 14,000 years ago?
 > 
@@ -49,6 +50,7 @@
 #### Nephilim Arrival (One Reference)
 
 > <a href="https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 22 1994</a>
+> 
 > Q: (L) Tell me about the Nephilim.
 > 
 > A: That was a race of beings in the third level of density which came from an actual planet at another point in this particular galaxy also in the third level of density, who were taken, or shall we say kidnapped, reprogrammed and retrained by the Lizard Beings to act as enforcers during a particular era of what you would measure as your past.
