@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/rao10/casscosmology1.git",
-      "Cassiopaea Forum": "https://cassiopaea.org/forum/",
+      // GitHub: "https://github.com/rao10/casscosmology1.git",
+      "Cassiopaea Transcripts": "https://cassiopaeatranscripts.org/",
     },
   }),
 }
