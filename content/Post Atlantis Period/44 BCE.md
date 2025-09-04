@@ -2,7 +2,9 @@
 > - Julius Caesar Assassination that is used in creation of Jesus legend.
 ### Session Quotes
 
-> [Session Date: Sep 07, 2013](https://cassiopaea.org/forum/threads/session-7-september-2013.32366/post-440846)
+#### Creation of Jesus legend
+
+> <a href="https://cassiopaea.org/forum/threads/session-7-september-2013.32366/post-440846" target="_blank" rel="noopener noreferrer"> Session Date: Sep 07 2013</a>
 >
 > Q: (Belibaste)I just want to know if Julius Caesar was a human being?
 > 
@@ -52,7 +54,7 @@
 > 
 > A: Last one. Cicero was a complete coward.
 
-> [Session Date: Jul 12, 2014](https://cassiopaea.org/forum/threads/session-12-july-2014.35409/post-506924)
+> <a href="https://cassiopaea.org/forum/threads/session-12-july-2014.35409/post-506924" target="_blank" rel="noopener noreferrer"> Session Date: Jul 12 2014</a>
 >
 > Q: (L) Anything else anybody wants to ask about that before we change topics? Everybody here is waiting for the change of topic... Okay, I've been going over all of the early sessions, and I noticed that I had a particular obsession with the topic of Jesus during the first year at the very least, 1994, because of my particular religious upbringing and background and so forth. And I had a lot of energy invested in -  not just a lot of energy, but a lot of emotion - so, I'm reading back over these previous answers we received on the topic of Jesus, and I would like to ask if, in fact, Julius Caesar is Jesus, or was the model for Jesus, why were you giving me answers that sometimes could have been applied to Caesar, but other times could not?
 > 
@@ -108,7 +110,7 @@
 > 
 > (Perceval) That story about Jesus coming to the cave, or being placed in a cave... That comes straight from your biblical...
 > 
-> (L) My biblical training! And the UFO, Frank was all about UFOs! [laughter]
+> (L) My biblical training! And the UFO, Frank was all about UFOs! \[Laughter\]
 > 
 > (Perceval) Trance meditation, you were fairly into that at the time.
 > 
@@ -116,23 +118,23 @@
 > 
 > A: Yes
 > 
-> Q: (L) Okay, well, I'm going to try to avoid having any beliefs or assumptions here about Caesar. [laughter]
+> Q: (L) Okay, well, I'm going to try to avoid having any beliefs or assumptions here about Caesar. \[Laughter\]
 > 
 > (Mr. Scott) Try to ignore all the Caesar busts we have all over the house!
 > 
 > (Pierre) What about...?
 > 
-> (Mr. Scott) I was talking to the C's. [laughter]
+> (Mr. Scott) I was talking to the C's. \[Laughter\]
 > 
 > (L) I would like to ask questions about Caesar's life.
 > 
-> (Perceval) Did Caesar exist? Let's start from the bottom! [laughter]
+> (Perceval) Did Caesar exist? Let's start from the bottom! \[Laughter\]
 > 
 > (L) Did Caesar really exist?
 > 
 > A: Yes
 > 
-> Q: (L) Alright! [laughter]  Did Caesar exist pretty much as he has been depicted in the historical accounts, i.e. Cicero, and Sallust, and Suetonius, and the other guys, the historians and so forth?
+> Q: (L) Alright! \[Laughter\]  Did Caesar exist pretty much as he has been depicted in the historical accounts, i.e. Cicero, and Sallust, and Suetonius, and the other guys, the historians and so forth?
 > 
 > A: Prejudicial and inability to recognize one of his caliber.
 > 
@@ -142,7 +144,7 @@
 > 
 > (L) Okay, well, let me... Okay, now... Caesar himself apparently penned The Gallic Wars. Textual studies do suggest that there has been SOME modification, but not a whole lot. It's very difficult to write in Caesar's style. Caesar's style is said to be the most impeccable and glorious writing that has ever been produced in the Latin language...
 > 
-> (Perceval) Can I ask an impartial question? [laughter]
+> (Perceval) Can I ask an impartial question? \[Laughter\]
 > 
 > (L) Yes?
 > 
@@ -232,7 +234,7 @@
 > 
 > A: Yes.
 > 
-> Q: (L) Yes to my question, or yes to my assumption? [laughter]
+> Q: (L) Yes to my question, or yes to my assumption? \[Laughter\]
 > 
 > A: Both.
 > 
@@ -280,7 +282,7 @@
 > 
 > A: Obviously, at that time, there was no one to learn from. However, Caesar did have a good model in some respects in his uncle Marius whom he loved and honored greatly. Do not underestimate the extraordinary intelligence and insight of Caesar.
 > 
-> Q: (L) So he just kind of winged it. Well, there is the story of him making a mistake and losing sleep all night long over it, and blaming himself for the failure. He learned from every mistake he ever made, and he didn't make many.  I would like to know did Sulla actually say, when he released Caesar from his proscription, that �you can have him, there are 40 Mariuses in him�?
+> Q: (L) So he just kind of winged it. Well, there is the story of him making a mistake and losing sleep all night long over it, and blaming himself for the failure. He learned from every mistake he ever made, and he didn't make many.  I would like to know did Sulla actually say, when he released Caesar from his proscription, that 'you can have him, there are 40 Mariuses in him'?
 > 
 > A: Something like that.
 > 
@@ -340,7 +342,7 @@
 > 
 > (Data) There's Mommsen and the other guy.
 > 
-> (L) Did Mommsen suggest Caesar was Jesus? He said he was the greatest man who ever lived, there's no question about that; but he didn�t suggest he was Jesus.
+> (L) Did Mommsen suggest Caesar was Jesus? He said he was the greatest man who ever lived, there's no question about that; but he didn't suggest he was Jesus.
 > 
 > (Kniall) Alexander Hamilton made that comment to someone.
 > 
@@ -458,7 +460,7 @@
 > 
 > Q: (L) So he's still in that state of like hyperconsciousness where people can contact him and communicate with him?
 > 
-> (Perceval) Does he answer Jesus' e-mail? [laughter] Does he answer Jesus' prayers?
+> (Perceval) Does he answer Jesus' e-mail? \[Laughter\] Does he answer Jesus' prayers?
 > 
 > A: Yes when the packets arrive!
 > 
@@ -470,7 +472,7 @@
 > 
 > A: Yes.
 > 
-> Q: (L) Um... Can you, you know, arrange the communication relay here? [laughter]
+> Q: (L) Um... Can you, you know, arrange the communication relay here? \[Laughter\]
 > 
 > (Atriedes) Can you patch us through to Caesar on a trunk line, please?
 > 
@@ -478,7 +480,7 @@
 > 
 > Q: (L) I hope Caesar can communicate in English. Ave Caesar!  [tape ends, pause for loading another tape]  Please hold!
 > 
-> (Atriedes) I can't believe you put our Lord and Savior on hold! [laughter]
+> (Atriedes) I can't believe you put our Lord and Savior on hold! \[Laughter\]
 > 
 > (L) Okay, we're back, Caesar. Let's try again. Let's get ourselves together here... Since time doesn't exist up there, nothing happened. I guess we ought to ask a question. Gaius Julius Caesar, are you there?
 > 
@@ -488,7 +490,7 @@
 > 
 > A: No.
 > 
-> Q: [laughter] (L) Um, well I'm sorry, I don't know how to pronounce it.
+> Q: \[Laughter\] (L) Um, well I'm sorry, I don't know how to pronounce it.
 > 
 > A: Pick up high Latin style for clue. [letters come much more slowly]
 > 

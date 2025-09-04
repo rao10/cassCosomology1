@@ -9,12 +9,15 @@
 
 #### Machu Picchu
 
-> [Session Date: Aug 29, 1998](https://cassiopaea.org/forum/threads/session-29-august-1998.53734/)
->
-Q: And that is why the Dark Ages are Dark. The Catholic Church destroyed everything that did not sharpen their own axe. Now, it says that this Professor Posnansky of the University of La Paz, and Professor Rolf Mueller, pushed the date of the building of Macchu Picchu back to 15,000 BC. Is this a correct date? 
-A: Close. 
-Q: Can you tell us when Macchu Picchu was built? 
-A: 12009 BC. 
+>  <a href="https://cassiopaea.org/forum/threads/session-29-august-1998.53734/" target="_blank" rel="noopener noreferrer"> Session Date: Aug 29 1998</a>
+> 
+> Q: And that is why the Dark Ages are Dark. The Catholic Church destroyed everything that did not sharpen their own axe. Now, it says that this Professor Posnansky of the University of La Paz, and Professor Rolf Mueller, pushed the date of the building of Macchu Picchu back to 15,000 BC. Is this a correct date? 
+> 
+> A: Close. 
+> 
+> Q: Can you tell us when Macchu Picchu was built? 
+> 
+> A: 12009 BC. 
 #### Comets and migration to underground
 
 > [Session Date: Sep 23,  2023](https://cassiopaea.org/forum/threads/session-23-september-2023.53808/)
@@ -24,7 +27,7 @@ A: 12009 BC.
 > A: Comets.
 #### Extinction of Clovis Race
 
-> [Session Date: Dec 29, 2018](https://cassiopaea.org/forum/threads/session-29-dec-2018.46645/post-784946)
+> <a href="https://cassiopaea.org/forum/threads/session-29-dec-2018.46645/post-784946" target="_blank" rel="noopener noreferrer"> Session Date: Dec 29 2018</a>
 >
 > (Joe) When you asked years ago about the Clovis people being wiped out and stuff, you asked a few questions about it. Last month they discovered this Greenland crater that they're dating to roughly 12,000 BC that wiped out the mammoths. I didn't find anything in the sessions where you asked how many space rocks or chunks actually impacted the planet? Do you know?
 > 
@@ -45,7 +48,7 @@ A: 12009 BC.
 > A: And what have we been saying?
 #### Nephilim Arrival (One Reference)
 
-> [Session Date: Oct 22, 1994](https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 22 1994</a>
 > Q: (L) Tell me about the Nephilim.
 > 
 > A: That was a race of beings in the third level of density which came from an actual planet at another point in this particular galaxy also in the third level of density, who were taken, or shall we say kidnapped, reprogrammed and retrained by the Lizard Beings to act as enforcers during a particular era of what you would measure as your past.
@@ -69,10 +72,9 @@ A: 12009 BC.
 > Q: (L) Where was this planet located?
 > 
 > A: This planet was located in the Orion complex.
-
 #### Cart Ruts from Malta
 
-> [Session Date: May 27, 2000](https://cassiopaea.org/forum/threads/session-27-may-2000.20533/)
+> <a href="https://cassiopaea.org/forum/threads/session-27-may-2000.20533/" target="_blank" rel="noopener noreferrer"> Session Date: May 27 2000</a>
 >
 > Q:  (L)  Don't play with me on this one!  I want to know what is the cause of the so-called "cart tracks" on the island of Malta?
 > 
@@ -143,10 +145,9 @@ A: 12009 BC.
 > A:  An artificial utilization of natural energy fields. 
 > 
 > Q:  (L)  Well, archaeologists like to explain them as cart ruts.  But to dig such ruts 72 cm deep would take a VERY long time.  And there is no consistent size or depth or direction, so that they are completely unexplainable as cart ruts.  Yes, there ARE places where you see real cart ruts.  In ancient Rome, they placed stones in the streets for pedestrians to walk across because the streets were often muddy or full of waste or water.  But the stones were placed at specific intervals to accommodate a standard axle width.  Here, there is NO standard!  There is not standard axle width, there is no standard depth, there is no standard anything.  Another explanation offered was that the Maltese were "dragging" things with something like the Native American travois deal.  Get real!  72 cm deep in solid rock?!  That's a LOT of dragging !  Another explanation was that the ruts were used to contain rolling balls on which things were slid along the ground.  Only problem is that there is no consistent width of individual ruts, and many of them are incised as "V's" in the rock, not rounded as would be thought if balls were being used.  None of the explanations make any sense.  But, let's move on. 
-
 #### Origin of Piri Ries Map
 
-> [Session Date: Dec 05, 1998](https://cassiopaea.org/forum/index.php/topic,26588.msg319780.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,26588.msg319780.html" target="_blank" rel="noopener noreferrer"> Session Date: Dec 05 1998</a>
 > 
 > (A) I want to ask about this grid business. I have this book with this 'sacred geometry' business, Bruce Cathie and all that. These people draw these grids with geometric shapes that differ from simple meridians. I would like to know how to find out what is the true geometry of this grid? Is it as complicated as they draw it, or is it as simple as longitude and latitude? Can I have some help with this?
 > 

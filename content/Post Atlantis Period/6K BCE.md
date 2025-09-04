@@ -2,7 +2,9 @@
 > - City of Tiahuanaco.
 ### Session Quotes
 
-> [Session Date: Aug 05, 1995](https://cassiopaea.org/forum/index.php/topic,17617.msg159066.html)
+#### City of Tiahuanaco
+
+> <a href="https://cassiopaea.org/forum/index.php/topic,17617.msg159066.html" target="_blank" rel="noopener noreferrer"> Session Date: Aug 05 1995</a>
 >
 > Q:  (L) Who built the city of Tiahuanaco?
 > 

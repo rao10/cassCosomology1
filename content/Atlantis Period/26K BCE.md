@@ -1,16 +1,20 @@
 > [!abstract] Events
-> - cometary bombardment.
-> - Taupo supervolcano(NZ) eruption.
+> - Cometary bombardment & Taupo supervolcano(NZ) eruption.
+> - Atlantis 2nd Breakup & Destruction
 > - Arrival of the STS Orion headquarters.
+> - Lizards lived among humans for thousand years?
 ### Session Quotes
 
-> [Session Date: Mar 09, 2024](https://cassiopaea.org/forum/threads/session-9-march-2024.54385/)
+#### Cometary bombardment & Taupo supervolcano(NZ) eruption.
+
+> <a href="https://cassiopaea.org/forum/threads/session-9-march-2024.54385/" target="_blank" rel="noopener noreferrer"> Session Date: Mar 09 2024</a>
 >
 > Q: (Ryan) In approximately 26.5K BCE, the Taupo supervolcano in New Zealand erupted, which is 'somewhat' close to the arrival of the STS Orion headquarters for the Sol system that you mentioned in 04/12/1999. Were both of these events related to any larger event, and if so, what was that event?
 > 
 > A: A cometary bombardment.
+#### Arrival of the STS Orion headquarters.
 
-> [Session Date: Dec 04, 1999](https://cassiopaea.org/forum/threads/session-4-december-1999.23800/)
+> <a href="https://cassiopaea.org/forum/threads/session-4-december-1999.23800/" target="_blank" rel="noopener noreferrer"> Session Date: Dec 04 1999</a>
 >
 > Q:  Now, according to some information posted on the Millennium Group site, there are some photographs that seem to indicate that there IS something anomalous in orbit around the Sun... maybe a new "planet, " or something.  Is there a new object in our solar system in a close orbit around the sun?
 > 
@@ -117,12 +121,21 @@
 > Q:   Are the two cylindrical parts aspects of the hexagonal shape extending down from a spherical cap?
 > 
 > A:  Close.
+#### Atlantis 2nd Breakup & Destruction
 
-* Atlantis 2nd Breakup & Destruction
-* Lizards lived among humans for thousand years?
+> <a href="https://cassiopaea.org/forum/threads/session-13-january-2024.54173/" target="_blank" rel="noopener noreferrer"> Session Date: Jan 13 2024</a>
+> 
+> Q: (seek10) C's mentioned three destruction events for Atlantis. So does Edgar Cayce. 'Cayce Atlantis' book suggests three destruction event years are around 50K BCE, 28K BCE, and 10K BCE. C's already confirmed the last one is close to 8498 BCE (10 December 1994 session). Are the first two destruction years Cayce suggested, correct?
+> 
+> A: Close
+> 
+> Q: (seek10) If not, what are the approximate correct years?
+> 
+> A: Within 2K years of expressed date.
+#### Lizards lived among humans for thousand years?
 
-According Edgar Cayce,  2nd breakup of atlantis happened around 26K BCE.
-> [Session Date: Nov 16, 1994](https://cassiopaea.org/forum/index.php/topic,28379.msg353158.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,28379.msg353158.html" target="_blank" rel="noopener noreferrer"> Session Date: Nov 16 1994</a>
+> 
 > Q: (L) You said that the Lizzies lived among humans for a thousand years. When, in our illusion of time, did this occur?
 > 
 > A: During peak of Atlantis.

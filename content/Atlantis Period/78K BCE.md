@@ -2,7 +2,8 @@
 > - Comet Venus Entry into Solar System
 ### Session Quotes
 
->[Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
+><a href="https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 07 1994</a>
+>
 > Q: (L) Now, the time of the passage of Venus was the time of the Exodus, is that correct? Was Venus a result of this cluster of comets?
 > 
 > A: Semi-stimulatad by gravitational pull.
@@ -23,7 +24,8 @@
 > 
 > A: Ancient wanderer from near Arcturus.
 
-> [Session Date: Sep 30, 1994](https://cassiopaea.org/forum/index.php/topic,25860.msg308046.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,25860.msg308046.html" target="_blank" rel="noopener noreferrer"> Session Date: Sep 30 1994</a>
+> 
 > Q: (L) Where did Venus originally come from?
 > 
 > A: 19 light years away.

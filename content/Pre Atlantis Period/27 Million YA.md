@@ -3,12 +3,17 @@
 > - Dinosaurs Extinct (18 miles Comet bombarded).
 ### Session Quotes
 
-> [Session Date: Aug 15, 1998](https://cassiopaea.org/forum/threads/session-15-august-1998.53698/)
+#### Sun's twin (nemesis) Interaction
+
+> <a href="https://cassiopaea.org/forum/threads/session-15-august-1998.53698/" target="_blank" rel="noopener noreferrer"> Session Date: Aug 15 1998</a>
 >
 > Q: (L) We have been discussing this period of the Brown Star. Is this period 26 or 27 million years? 
+> 
 > A: Close. 
+#### Dinosaurs Extinct
 
-> [Session Date: Sep 30, 1994](https://cassiopaea.org/forum/index.php/topic,25860.msg308046.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,25860.msg308046.html" target="_blank" rel="noopener noreferrer"> Session Date: Sep 30 1994</a>
+> 
 > Q: (L) Was it a cosmic event that brought about the death of some of the largest dinosaurs?
 > 
 > A: Yes.
@@ -41,7 +46,8 @@
 > 
 > A: 18 miles diameter.
 
-> [Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 07 1994</a>
+> 
 > Q: (L) This cluster of comets that you talk about that caused an impact, did one of the cluster impact the earth at the time of the dinosaur dyings?
 > 
 > A: No one was large enough for event.

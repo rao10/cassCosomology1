@@ -1,15 +1,40 @@
 > [!abstract] Events
-> - Younger Dryas (Flash freezing of Mammoths).
-> - 7 Degrees Geographical axis tilt.
-> - Noah's Flood Myth (Mars, Comets).
-> - Tower of Babel.
-> - Final Breakup of Atlantis (recovered).
-> - Migration to Canary Island, Egypt, Inca.
+> * Final Destruction of Atlantis (Crystals) - 10.9K BCE
+> * Younger Dryas (Flash freezing of Mammoths).
+> * 7 Degrees Geographical axis tilt.
+> * Noah's Flood Myth (Mars, Comets).
+>    -19 Million out of 6 Billion survived (More Athenians).
+> * Tower of Babel destruction by Lizards.
+> * Final Breakup of Atlantis (recovered).
+> * Migration to Canary Island, Egypt, Inca.
+> * The war of 10 kings (Mahabharata).
+> * Submergence of Dwarika.
+> * End of longevity gene (Age: 2500 yrs avrg.(7% of people).
+> * Earth's water Vapor canopy  during Atlantean times?.
+> * hundreds of nations during Atlantean period.
+> * Atlantean inland hunter-gatherer societies.
+> * Truth in Plato's Atlantean story.
+> * Construction of Gobekli Tepe (Surviving Pyramid builders).
 ### Session Quotes
 
+#### Final Destruction of Atlantis (Crystals) - 10.9K BCE
+
+> <a href="https://cassiopaea.org/forum/threads/session-23-august-2025.56847/" target="_blank" rel="noopener noreferrer"> Session Date: Aug 23 2025</a>
+> 
+> Q: (seek10) What was the time period when the crystals overpowered Atlanteans?
+> 
+> A: 50k to 10900 BC approximately.
+> 
+> Q: (L) So it was an ongoing process?
+> 
+> A: Yes
+> 
+> Q: (L) And it kind of ended at the time of the, what was that called, the Younger Dryas event?
+> 
+> A: Yes
 #### Younger Dryas (Flash freezing of Mammoths).
 
-> [Session Date: Apr 16, 2016](https://cassiopaea.org/forum/threads/session-16-april-2016.41489/post-644509)
+> <a href="https://cassiopaea.org/forum/threads/session-16-april-2016.41489/post-644509" target="_blank" rel="noopener noreferrer"> Session Date: Apr 16 2016</a>
 >
 > (Pierre) One last question: about the frozen mammoths. During the last session, we suggested that the cause of the flash-frozen mammoths was a Super Derecho like a giant thunderstorm that deflected the jet stream down towards the Earth's surface, and that's what flash-froze the mammoths. You said, "Close enough." So that's not exactly what happened. What are we missing here?
 > 
@@ -24,9 +49,9 @@
 > A: Yes
 #### 7 Degrees Geographical axis tilt
 
-> [Session Date: May 07, 2016](https://cassiopaea.org/forum/threads/session-7-may-2016.41701/post-648988)
+> <a href="https://cassiopaea.org/forum/threads/session-7-may-2016.41701/post-648988" target="_blank" rel="noopener noreferrer"> Session Date: May 07 2016</a>
 >
-> (Pierre) Two quick questions about flash-frozen mammoths. [laughter]  The cometary body that impacted Earth, I would like to know what was the location of the north geographic pole before and after the impact?
+> (Pierre) Two quick questions about flash-frozen mammoths. \[Laughter\]  The cometary body that impacted Earth, I would like to know what was the location of the north geographic pole before and after the impact?
 > 
 > A: 7 degrees different.
 > 
@@ -59,15 +84,16 @@
 > (Pierre) South Central Canada is before?
 > 
 > A: Before.
-
 #### Noah's Flood Myth (Mars, Comets)
 
-> [Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 07 1994</a>
+> 
 > Q: (L) And Noah's flood occurred 12,388 B.C., is that correct?
 > 
 > A: Close.
 
-> [Session Date: Nov 16, 1994](https://cassiopaea.org/forum/index.php/topic,28379.msg353158.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,28379.msg353158.html" target="_blank" rel="noopener noreferrer"> Session Date: Nov 16 1994</a>
+> 
 > Q: (L) And you said that the "flood of Noah" was the story of the final deluge and destruction of Atlantis?
 > 
 > A: Yes.
@@ -106,7 +132,7 @@
 > 
 > Q: (Pierre) You mean the water transfer? Yeah, that's the arcing. The plasma connection between Earth and...
 > 
-> (L) Was this the same event that left that gigantic scar on Mars? (I don�t know how anybody can look at that scar and not get the willies!)
+> (L) Was this the same event that left that gigantic scar on Mars? (I don&#39;t know how anybody can look at that scar and not get the willies!)
 > 
 > A: Yes.
 > 
@@ -146,9 +172,9 @@
 > 
 > Q: (Artemis) So sometimes our rain just comes from space.
 > 
-> (L) I don�t know, sometimes. Chunks of ice come from space all the time.
+> (L) I don't know, sometimes. Chunks of ice come from space all the time.
 > 
-> (Artemis) They bring viruses with them! The plague! [laughter]
+> (Artemis) They bring viruses with them! The plague! \[Laughter\]
 > 
 > (L) I mean, they call comets "dirty snowballs". According to them, these dirty snowballs can fly through space and land wherever they want to. And if you think about it, what they just said was coming in at the poles... That would be like when the blasts from the sun...
 > 
@@ -165,10 +191,25 @@
 > (Pierre) And easing the discharge.
 > 
 > (Joe) Planetary alignments.
+#### More Athenian Survivors
 
+>  <a href="https://cassiopaea.org/forum/threads/session-13-january-2024.54173/" target="_blank" rel="noopener noreferrer"> Session Date: Jan 13 2024</a>
+>  
+> (Ryan) At the time of the cosmic catastrophes related to the "fall of Atlantis", what happened to the population of "Athens" – i.e. Russia - who were acting as Atlantis' opponent?
+> 
+> A: Suffered cataclysms like everyone else but with more survivors.
+> 
+> Q: (Ryan) What relationship, if any, did they have with the Celtic peoples of the British/Irish isles who constructed the megaliths?
+> 
+> A: Ancestors were the same.
+> 
+> Q: (L) So the ancestors of the Russians and the Celtic peoples were the same?
+> 
+> A: Yes
 #### Tower of Babel
 
-> [Session Date: Oct 05, 1994](https://cassiopaea.org/forum/threads/session-5-october-1994.22347/)
+> <a href="https://cassiopaea.org/forum/threads/session-5-october-1994.22347/" target="_blank" rel="noopener noreferrer"> Session Date: Oct 05 1994</a>
+> 
 > Q: (L) What was the event a hundred or so years after the flood of Noah that was described as the confusing of languages, or the tower of Babel?
 > 
 > A: Spiritual confluence.
@@ -200,10 +241,10 @@
 > Q: (L) Did they do this through implants and abduction?
 > 
 > A: Partly.
-
 #### Final Breakup of Atlantis (recovered) and Migration to Canary Island, Egypt, Inca
 
-> [Session Date: Oct 07, 1994](https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,25890.msg308377.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 07 1994</a>
+> 
 > Q: (L) Where do the Basques come from?
 > 
 > A: Atlantis.
@@ -247,19 +288,16 @@
 > Q: (L) Where else did the Atlanteans go?
 > 
 > A: Americas. Inca. Aztec. Maya. Hopi Tribe. Pima tribe. 
-
-* The war of 10 kings (Mahabharata)
+#### The war of 10 kings (Mahabharata)
 
 > [Session Date: Feb 25,  2023](https://cassiopaea.org/forum/threads/session-25-february-2023.53089/)
-
+> 
 > Q: (Sid) Has "the War of 10 Kings" been used as a prototype for the Mahabharata war?
 > 
 > A: Same thing, like Atlantis.
+#### Submergence of Dwarika
 
-* Submergence of Dwarika
-
-
-> [Session Date: Mar 09, 2024](https://cassiopaea.org/forum/threads/session-9-march-2024.54385/)
+> <a href="https://cassiopaea.org/forum/threads/session-9-march-2024.54385/" target="_blank" rel="noopener noreferrer"> Session Date: Mar 09 2024</a>
 >
 > (seek10) Did Dwarika of Krishna legend (the western coast of India) submerge during the "Noah's Great Flood" event?
 > 
@@ -274,12 +312,11 @@
 > Q: (seek10) Is it an Atlantean colony?
 > 
 > A: No.
+#### End of Longevity Gene (2500 years for Kantek descendants (7% of population) and 800 years for the rest)
 
-#### End of Longevity Gene (2500 yes (7%), rest 800 yrs)
-
-> [Session Date: Jul 06, 2024](https://cassiopaea.org/forum/threads/session-6-july-2024.54848/)
+> <a href="https://cassiopaea.org/forum/threads/session-6-july-2024.54848/" target="_blank" rel="noopener noreferrer"> Session Date: Jul 06 2024</a>
 >
-> Q: (L) Okay. [Reading the next question by Z...] Didn't we ask this once before, whether ancient people and kings really lived extraordinarily long lives compared to modern man?
+> Q: (L) Okay. Didn't we ask this once before, whether ancient people and kings really lived extraordinarily long lives compared to modern man?
 > 
 > (Gaby) I think so... It rings a bell.
 > 
@@ -413,7 +450,7 @@
 > 
 > (L) Yeah, lives are just too short to figure everything out. I mean, I've worked like a freaking slave for nearly all of my life, and I am only aware of how much I don't know.
 > 
-> (Joe) So why then are peoples� lives today so much shorter than they were then?
+> (Joe) So why then are peoples' lives today so much shorter than they were then?
 > 
 > A: Changes in Earth and DNA.
 > 
@@ -447,7 +484,7 @@
 > 
 > Q: (Joe) How would you feel about living for 800 years?
 > 
-> (L) I think 800 might be okay as long as I could maintain some usefulness in the body for at least more of it. Because I mean, if you get old, like you get old now, and then that just drags on for a long time, I wouldn't want to do that! [Laughter]
+> (L) I think 800 might be okay as long as I could maintain some usefulness in the body for at least more of it. Because I mean, if you get old, like you get old now, and then that just drags on for a long time, I wouldn't want to do that! \[Laughter\]
 > 
 > (Chu) But Alejo pointed on the chat, you could meet somebody like Caesar and then Putin in your lifespan. That's pretty cool.
 > 
@@ -455,9 +492,9 @@
 > 
 > (T.C.) They said 8,000 years for the maximum lifespan. Why is this such a hard stop at 8,000 years?
 > 
-> (L) Why is it a hard stop at 8,000 years? [Laughter] Leave it to T.C. to ask that question!
+> (L) Why is it a hard stop at 8,000 years? \[Laughter\] Leave it to T.C. to ask that question!
 > 
-> (Andromeda) Why not 8,050? [Laughter]
+> (Andromeda) Why not 8,050? \[Laughter\]
 > 
 > (L) Yeah, I mean, why not 10,000?
 > 
@@ -483,7 +520,9 @@
 > 
 > Q: (Joe) That's weird. Time must move faster then.
 
-> [Session Date: Mar 04, 1995](https://cassiopaea.org/forum/index.php/topic,26049.msg310561.html)
+#### Earth's water Vapor canopy  during Atlantean times?
+
+> <a href="https://cassiopaea.org/forum/index.php/topic,26049.msg310561.html" target="_blank" rel="noopener noreferrer"> Session Date: Mar 04 1995</a>
 >
 > Q: (L) It was stated that the earth once had a water vapor canopy. Was this one of the reasons for longevity in that time?
 > 
@@ -496,3 +535,103 @@
 > Q: (L) Does that mean that we should avoid sunlight because we no longer have our canopy?
 > 
 > A: You cannot avoid enough to matter.
+#### Hundreds of Nations during Atlantean Period
+
+> <a href="https://cassiopaea.org/forum/threads/session-13-january-2024.54173/" target="_blank" rel="noopener noreferrer"> Session Date: Jan 13 2024</a>
+> 
+> Q: (irjO) Today, the world is divided in 195 nations. Right before the Younger Dryas event, was the world similarly divided into empires/colonies/countries?
+> 
+> A: Yes
+> 
+> Q: (IrjO) How many such "nations" existed?
+> 
+> A: Hundreds.
+> 
+> Q: (L) I don't think an exact number is needed.
+#### Hunter gatherer inland societies in Atlantis
+
+> <a href="https://cassiopaea.org/forum/threads/session-13-january-2024.54173/" target="_blank" rel="noopener noreferrer"> Session Date: Jan 13 2024</a>
+> 
+> (irjO) Was it, as Graham Hancock suggests, that hunter-gatherers lived inland, and the "advanced" civilization(s) lived almost exclusively on the coastlines which were submerged?
+> 
+> A: Close.
+#### 70% truth in Plato's Atlantean story
+
+> <a href="https://cassiopaea.org/forum/threads/session-13-january-2024.54173/" target="_blank" rel="noopener noreferrer"> Session Date: Jan 13 2024</a>
+> 
+> Q: (Altair) What is the percentage of truth in Plato's account of Atlantis as is known to us?
+> 
+> A: 70.
+
+#### Construction of Gobekli Tepe (Surviving Pyramid builders)
+> 
+> [Session Date: April 26 2025](https://cassiopaea.org/forum/threads/session-26-april-2025.55829/)
+> 
+> (Ryan) Is the hypothesized dating for the earliest construction of Gobekli Tepe (9700 - 9500 BCE) approximately correct?
+> 
+> A: About 1k years off.
+> 
+> Q: (L) About 1000 years off. That means older, like 10,700?
+> 
+> A: Yes
+> 
+> Q: (L) So it's a little bit older than what... Well, you would imagine that they would try to make it as young as they possibly could and get away with it.
+> 
+> (Ryan) Who was responsible for the initial construction?
+> 
+> A: Survivors.
+> 
+> Q: (L) Survivors from where?
+> 
+> A: Those who built pyramids.
+> 
+> Q: (L) So there was some event that fell upon the people who built the pyramids and they fled and built this thing here?
+> 
+> A: Yes
+> 
+> Q: (Niall) The Exodus.
+> 
+> (L) It was the Exodus, yes! [laughter]
+> 
+> (Ryan) Was Gobekli Tepe's primary purpose, as Klaus Schmidt theorized, as a place of ritual or religious activity?
+> 
+> A: Not precisely. More like an observatory. Also a message.
+> 
+> Q: (Ryan) For how long was the site in use?
+> 
+> A: 3 to 4K years.
+> 
+> Q: (L) Three to four thousand years. So that would take it to about 7,000, something like that? Okay.
+> 
+> (Ryan) Was Gobekli Tepe always temporarily inhabited or were there ever permanent settlements there or close nearby?
+> 
+> A: Temporary.
+> 
+> Q: (L) So they temporarily used it, they would come and go, is that it?
+> 
+> A: Yes
+> 
+> Q: (L) But they lived elsewhere?
+> 
+> A: Yes
+> 
+> Q: (Joe) Was it an observatory for observing movement of the skies, basically, in anticipation of another...?
+> 
+> A: Yes
+> 
+> Q: (Joe) And they tried to leave a message to future generations about cyclical catastrophes or periodic...?
+> 
+> A: Yes
+> 
+> Q: (Niall) And they succeeded because it's been decoded recently.
+> 
+> (L) Yeah. Somebody's done some really good work decoding it.
+> 
+> (Ryan) Was Gobekli Tepe deliberately buried by later generations?
+> 
+> A: No. Buried to protect it from later generations. See Settegast.
+> 
+> Q: (L) Okay. So that's Mary Settegast and her book, what's the title of her book? Plato Prehistorian. Yeah. And then there was one other she did... When Zarathustra Spoke. Have you read those books, Ryan?
+### See also:
+
+- [Of Flash Frozen Mammoths and Cosmic Catastrophes](https://www.sott.net/article/357709-Of-Flash-Frozen-Mammoths-and-Cosmic-Catastrophes)

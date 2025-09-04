@@ -2,7 +2,9 @@
 > - Lizard Frozen in Time to alter Human Affairs
 ### Session Quotes
 
-> [Session Date: Oct 22, 1994](https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html)
+#### Lizard Frozen in Time to alter Human Affairs
+
+> <a href="https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 22 1994</a>
 > Q: (L) Going back to the beings that absorb nutrients through their pores, what kind of beings are they?
 > 
 > A: Both those that you describe as the Lizard Beings and those you describe as the Grays. This is necessary for their survival in each case. Even though the Grays are not natural parts of the short wave cycle, but rather an artificial creation by the Lizard Beings, but nevertheless they mimic the nourishment functions.

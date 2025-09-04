@@ -2,7 +2,9 @@
 > - Birth of Moon from Earth  (Cometary interaction).
 ### Session Quotes
 
-> [Session Date: October 22, 1994](https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html)
+#### Birth of Moon
+
+> <a href="https://cassiopaea.org/forum/index.php/topic,26046.msg310541.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 22 1994</a>
 >
 > Q: (L) When and how did planet earth acquire its moon?
 > 

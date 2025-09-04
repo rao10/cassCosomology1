@@ -6,7 +6,7 @@
 
 #### Stonehenge - Built by Druids (Energy Redirector)
 
-> [Session Date: Aug 22, 1998](https://cassiopaea.org/forum/threads/session-22-august-1998.53714/)
+> <a href="https://cassiopaea.org/forum/threads/session-22-august-1998.53714/" target="_blank" rel="noopener noreferrer"> Session Date: Aug 22 1998</a>
 >
 > Q: Then you talked about the pyramid as a focuser of energy to do 'all things' or many things. Later we asked about Stonehenge and you said that Stonehenge was built 6,000 BC by Druids, an early Aryan group, as an energy director to do 'all things.' This seems to indicate that both structures had similar design functions. Is that correct?
 > 
@@ -32,7 +32,7 @@
 > 
 > A: No, yes.
 
-> [Session Date: Oct 23, 1994](https://cassiopaea.org/forum/index.php/topic,26047.msg310546.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,26047.msg310546.html" target="_blank" rel="noopener noreferrer"> Session Date: Oct 23 1994</a>
 > Q: (L) Who built Stonehenge?
 > 
 > A: Druids.
@@ -73,19 +73,19 @@
 > 
 > A: Learn. Laura will find answer through discovery.
 
-> [Session Date: Nov 09, 1994](https://cassiopaea.org/forum/index.php/topic,28376.msg353145.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,28376.msg353145.html" target="_blank" rel="noopener noreferrer"> Session Date: Nov 09 1994</a>
 > Q: (L) In many ancient ruins there are found certain symbols which interest me, specifically the coil or spiral which seems to be ubiquitous throughout the world. This is also very similar to one of the Reiki symbols. What is the origin and meaning of this symbol?
 > 
 > A: Energy collector translevel; stonehenge was one. Stonehenge is a coil. The missing stones form a coil arrangement. People have been "zapped" at stonehenge.
 
-> [Session Date: Mar 04, 1995](https://cassiopaea.org/forum/index.php/topic,26049.msg310561.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,26049.msg310561.html" target="_blank" rel="noopener noreferrer"> Session Date: Mar 04 1995</a>
 >
 > Q: (L) How long ago was North Africa green and fertile and what geologic factors created the state in which we find it today?
 > 
 > A: Weather changes in 3rd density 10,000 years ago.
 #### Oak Island TDARM
 
-> [Session Date: Dec 10, 1994](http://www.cassiopaea.org/forum/index.php?topic=21613.msg226768)
+> <a href="http://www.cassiopaea.org/forum/index.php?topic=21613.msg226768" target="_blank" rel="noopener noreferrer"> Session Date: Dec 10 1994</a>
 > Q: (L) What is buried on Oak Island?
 > 
 > A: Regenerator.
@@ -132,9 +132,9 @@
 > 
 > Q: (T) Well, we can send it in to a treasure hunter's magazine and give somebody an idea of how far they have to go. (L) Yeah, tell them what it is and they will go whole hog for it. (T) Yeah. It's a regenerator. "What?" Well, it's a remolecularizer. What's wrong with you? Where have you been? You never wanted to be regenerated? You, too, can be a Time Lord! (L) Amaze your friends, confound your enemies, you can hypnotize any woman from a distance by the power of your... REGENERATOR! (T) Wow! Look at the size of his Regenerator! [much laughter] Thank you.
 
-Invention of Agriculture
+#### Invention of Agriculture
 
-> [Session Date: Feb 22, 2010](https://cassiopaea.org/forum/threads/session-22-february-2010.16438/)
+> <a href="https://cassiopaea.org/forum/threads/session-22-february-2010.16438/" target="_blank" rel="noopener noreferrer"> Session Date: Feb 22 2010</a>
 >
 > Q: (L) Okay, here's this other question:
 > 
@@ -186,7 +186,7 @@ Invention of Agriculture
 > 
 > (Perceval) Materialize our own healthy food.
 > 
-> (Mr. Scott) We'll be able to manifest healthy pizzas!! [laughter]
+> (Mr. Scott) We'll be able to manifest healthy pizzas!! \[Laughter\]
 > 
 > A: Yes
 > 

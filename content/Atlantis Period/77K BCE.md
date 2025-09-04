@@ -1,7 +1,7 @@
 > [!abstract] Events
 > - Explosition of 5th planet Kantek(to Asteroid belt).
-> - Migration of Kantekanian (ancestors of Celts, Aryans) to Earth through Portal at Kiev ( Lizard Air drop & Merkaba).
-> - 200 years coexistence with Neanderthal.
+> - Migration of Kantekanian (ancestors of Celts, Aryans) to Earth through Portal at Kiev ( Lizard Air drop) & Merkabah/Mother Stone.
+> - 233 years coexistence with Neanderthal.
 > - Neanderthal taken to Other planets by 4D Lizards.
 ### Session Quotes
 
@@ -20,28 +20,12 @@
 > Q: (L) When did that planet break apart into the asteroid belt.
 > 
 > A: 79 thousand years ago approximately.
+#### Migration of Kantekanian (ancestors of Celts, Aryans) to Earth through Portal at Kiev (Lizard Air drop) & Merkabah/Mother Stone.
 
-> [Session Date: Oct 05, 1994](https://cassiopaea.org/forum/threads/session-5-october-1994.22347/)
->
-> Q: (L) What happened to Neanderthal man?
-> 
-> A: Removed by Lizzies to other planets.
-> 
-> Q: (L) Is that removed as in taken off the planet physically?
-> 
-> A: Yes.
-> 
-> Q: (L) What planet were they taken to?
-> 
-> A: Others.
 
->[Session Date: Feb 11, 1995](https://cassiopaea.org/forum/index.php/topic,26006.msg310039.html)
->
-> Q: Well, just one more question: You said that Neanderthal man had been taken by the Lizzies to another planet, now, I don't want to know what other planet, but I would like to know what state, evolutionary speaking, is Neanderthal man in at present, as we measure time?
-> 
-> A: No progress, still the same.
+#### 233 years coexistence with Neanderthal.
 
-> [Session Date: Apr 15, 2000](https://cassiopaea.org/forum/threads/session-15-april-2000.20532/)
+> <a href="https://cassiopaea.org/forum/threads/session-15-april-2000.20532/" target="_blank" rel="noopener noreferrer"> Session Date: Apr 15 2000</a>
 >
 > Q:  (L)  Well, for a period of time it seems that they continued to exist on the planet alongside the new model, cro-magnon or whatever.
 > 
@@ -58,3 +42,24 @@
 > Q:  (L)  Who miscalculated the time references?
 > 
 > A:  Science.
+#### Neanderthal taken to Other planets by 4D Lizards.
+
+> <a href="https://cassiopaea.org/forum/threads/session-5-october-1994.22347/" target="_blank" rel="noopener noreferrer"> Session Date: Oct 05 1994</a>
+>
+> Q: (L) What happened to Neanderthal man?
+> 
+> A: Removed by Lizzies to other planets.
+> 
+> Q: (L) Is that removed as in taken off the planet physically?
+> 
+> A: Yes.
+> 
+> Q: (L) What planet were they taken to?
+> 
+> A: Others.
+
+><a href="https://cassiopaea.org/forum/index.php/topic,26006.msg310039.html" target="_blank" rel="noopener noreferrer"> Session Date: Feb 11 1995</a>
+>
+> Q: Well, just one more question: You said that Neanderthal man had been taken by the Lizzies to another planet, now, I don't want to know what other planet, but I would like to know what state, evolutionary speaking, is Neanderthal man in at present, as we measure time?
+> 
+> A: No progress, still the same.

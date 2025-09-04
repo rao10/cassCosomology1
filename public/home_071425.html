@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cassiopaean Cosmology</title>
+  <!-- Popper.js (required by Tippy.js) -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<!-- Tippy.js -->
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<!-- Optional: Tippy.js CSS for default styling -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .left-pane {
+      width: 1000px;
+      min-width: 200px;
+      max-width: 90%;
+      height: 100%;
+      overflow: auto;
+      border-right: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right-pane {
+      flex-grow: 1;
+      height: 100%;
+      overflow: auto;
+    }
+
+    #resizeControls {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 5px;
+      background: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    #resizeControls button {
+      padding: 4px 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .image-container {
+      padding: 10px;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+    }
+	.tooltip-container {
+    position: relative;
+    display: inline-block; /* Ensures proper size for hover area */
+}
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px ;
+  flex: 1 1 auto; /* Ensures it doesn't shrink or stretch awkwardly */
+  align-self: flex-start; /* Align it to the start of the container */
+  white-space: normal; /* Ensures text wraps */
+  max-width: 300px;
+}
+.tooltip-container:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+}
+.inline-spinner {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.inline-spinner.visible {
+  display: inline-block;
+  opacity: 1;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#infoBtn {
+  font-size: 16px;
+  padding: 4px 8px;
+  background-color: #e0e0e0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#resizeControls button {
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #007B8A;
+  border: 1px solid #005F66;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#resizeControls button:hover {
+  background-color: #00A3B0;
+}
+
+#resizeControls button:focus {
+  outline: 2px solid #00D1D1;
+  outline-offset: 2px;
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+  <div class="container">
+    <div class="left-pane" id="leftPane">
+		<div id="resizeControls">
+		  <button id="increaseWidth" data-tippy-content="Increase left pane width">➕</button>
+		  <button id="decreaseWidth" data-tippy-content="Decrease left pane width">➖</button>
+		  <button id="resetWidth" data-tippy-content="Reset to default width">⭯</button>
+		  <button id="infoBtn"
+				  data-tippy-content="<strong>Resize Panel</strong><br>Use ➕ and ➖ to adjust the left pane. Click ⭯ to reset.<br> Click on years or gray box to show details on the right pane"
+				  aria-label="Info">ℹ️</button>
+		  <div id="inlineSpinner" class="inline-spinner"></div>
+		</div>
+        <div class="image-container">
+            <img id="myImage" class="responsive-img" src="Cass_Cosm_07142025a1_1.png" usemap="#image1_1" alt="Example Image">
+<map name="image1_1">
+
+  <area shape="rect" coords="4239,3682,4296,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2809-BCE')" alt="" onmouseover="showTooltip('n123',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3996,3370,4500,3520" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2809-BCE')" alt="" onmouseover="showTooltip('n122',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4514,3849,5004,4015" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2676-BCE')" alt="" onmouseover="showTooltip('n72',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4730,3682,4787,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2676-BCE')" alt="" onmouseover="showTooltip('n62',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5204,3682,5261,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2300-BCE')" alt="" onmouseover="showTooltip('n61',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4863,3205,5602,3521" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2300-BCE')" alt="" onmouseover="showTooltip('n57',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3321,4560,3963,4704" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1302-AD')" alt="" onmouseover="showTooltip('n121',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3608,4820,3665,4877" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1302-AD')" alt="" onmouseover="showTooltip('n120',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="248,4882,342,5247" alt="" />
+  <area shape="rect" coords="248,2322,342,2820" alt=""/>
+  <area shape="rect" coords="248,3981,342,4266" alt=""/>
+  <area shape="rect" coords="248,1290,342,1856" alt="" />
+  <area shape="rect" coords="248,2928,342,3493" alt=""/>
+  <area shape="rect" coords="6344,1987,6401,2043" alt="" onmouseover="showTooltip('n114',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="248,1806,342,2372" alt="" />
+  <area shape="rect" coords="248,4361,342,4926" alt="" />
+  <area shape="rect" coords="245,3444,339,4010" alt="" />
+  <area shape="rect" coords="248,555,342,1196" alt=""/>
+  <area shape="rect" coords="6009,4818,6065,4874" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1972-AD')" alt="" onmouseover="showTooltip('n109',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5189,4818,5246,4874" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1947-AD')" alt="" onmouseover="showTooltip('n108',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4630,4817,4686,4873" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1830-AD')" alt="" onmouseover="showTooltip('n107',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4313,4817,4369,4873" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1500-AD')" alt="" onmouseover="showTooltip('n106',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5025,4602,5412,4704" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1947-AD')" alt="" onmouseover="showTooltip('n105',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5776,4602,6303,4704" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1972-AD')" alt="" onmouseover="showTooltip('n104',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4050,4602,4632,4704" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1500-AD')" alt="" onmouseover="showTooltip('n103',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4435,4978,4881,5177" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1830-AD')" alt="" onmouseover="showTooltip('n102',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2737,4978,3442,5203" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1100-AD')" alt="" onmouseover="showTooltip('n101',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3061,4820,3118,4877" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1100-AD')" alt="" onmouseover="showTooltip('n100',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1736,4503,2231,4702" alt="" onmouseover="showTooltip('n99',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2331,4820,2555,4877" alt="" onmouseover="showTooltip('n98',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="918,4820,974,4877" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/56-AD')" alt="" onmouseover="showTooltip('n97',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6245,4933,6820,5013" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/2014-AD')" alt="" onmouseover="showTooltip('n96',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1537,4978,2382,5182" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/564-AD')" alt="" onmouseover="showTooltip('n95',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3634,4978,4310,5112" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1350-AD')" alt="" onmouseover="showTooltip('n94',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2465,4586,3025,4704" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/700-AD')" alt="" onmouseover="showTooltip('n93',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5469,4978,5952,5096" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1953-AD')" alt="" onmouseover="showTooltip('n92',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2717,4810,2774,4867" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/700-AD')" alt="" onmouseover="showTooltip('n91',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1932,4820,1988,4877" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/564-AD')" alt="" onmouseover="showTooltip('n90',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1164,4820,1631,4877" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/before-564AD-dummy-Yrs')" alt="" onmouseover="showTooltip('n89',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6509,4818,6565,4874" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/2014-AD')" alt="" onmouseover="showTooltip('n88',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5674,4818,5731,4874" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1953-AD')" alt="" onmouseover="showTooltip('n87',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3936,4820,3992,4877" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/1350-AD')" alt="" onmouseover="showTooltip('n86',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="721,4978,1171,5111" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Christian-Era/56-AD')" alt="" onmouseover="showTooltip('n85',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5191,3861,6108,4026" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2200-BCE')" alt="" onmouseover="showTooltip('n84',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3013,3682,3070,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/4233-BCE')" alt="" onmouseover="showTooltip('n83',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5621,3682,5678,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/2200-BCE')" alt="" onmouseover="showTooltip('n82',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2867,3392,3216,3518" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/4233-BCE')" alt="" onmouseover="showTooltip('n81',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5700,3315,6397,3520" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/1600-BCE')" alt="" onmouseover="showTooltip('n80',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1605,3849,2273,4067" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/6K-BCE')" alt="" onmouseover="showTooltip('n79',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1911,3682,1967,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/6K-BCE')" alt="" onmouseover="showTooltip('n78',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6742,3379,7370,3518" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/753-BCE')" alt="" onmouseover="showTooltip('n77',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2004,3319,2769,3518" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/5.633K-BCE')" alt="" onmouseover="showTooltip('n76',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="516,3849,1430,4165" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/8K-BCE')" alt="" onmouseover="showTooltip('n75',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2413,3849,3069,4006" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/5200-BCE')" alt="" onmouseover="showTooltip('n74',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7217,3861,7827,4002" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/44-BCE')" alt="" onmouseover="showTooltip('n73',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="616,3187,1825,3518" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/7K-BCE')" alt="" onmouseover="showTooltip('n71',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="945,3682,1001,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/8K-BCE')" alt="" onmouseover="showTooltip('n70',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7044,3682,7101,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/753-BCE')" alt="" onmouseover="showTooltip('n69',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1192,3682,1249,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/7K-BCE')" alt="" onmouseover="showTooltip('n68',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2358,3682,2415,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/5.633K-BCE')" alt="" onmouseover="showTooltip('n67',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2713,3682,2769,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/5200-BCE')" alt="" onmouseover="showTooltip('n66',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3346,3682,3403,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/4098-BCE')" alt="" onmouseover="showTooltip('n65',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3569,3682,3625,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/3218-BCE')" alt="" onmouseover="showTooltip('n64',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3891,3682,3948,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/3131-BCE')" alt="" onmouseover="showTooltip('n63',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6062,3682,6118,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/1600-BCE')" alt="" onmouseover="showTooltip('n60',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7452,3682,7509,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/44-BCE')" alt="" onmouseover="showTooltip('n59',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6737,3682,6794,3739" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/1100-BCE')" alt="" onmouseover="showTooltip('n58',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6356,3861,7176,4233" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/1100-BCE')" alt="" onmouseover="showTooltip('n56',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3696,3849,4143,3999" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/3131-BCE')" alt="" onmouseover="showTooltip('n55',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3177,3849,3572,3999" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/4098-BCE')" alt="" onmouseover="showTooltip('n54',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3270,3319,3924,3518" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Post-Atlantis-Period/3218-BCE')" alt="" onmouseover="showTooltip('n53',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4827,2540,5418,2782" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/13.4K-BCE')" alt="" onmouseover="showTooltip('n52',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5144,1987,5201,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/13.4K-BCE')" alt="" onmouseover="showTooltip('n51',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5464,1987,5520,2043" alt="" onmouseover="showTooltip('n50',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4963,1987,5019,2043" alt="" onmouseover="showTooltip('n49',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="4529,1987,4585,2043" alt="" onmouseover="showTooltip('n48',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="625,2152,1990,2524" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/77K-BCE')" alt="" onmouseover="showTooltip('n47',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4512,2155,5151,2338" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/16K-BCE')" alt="" onmouseover="showTooltip('n46',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1928,1640,2454,1823" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/72K-BCE')" alt="" onmouseover="showTooltip('n45',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6295,1697,7173,1823" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/9K-BCE')" alt="" onmouseover="showTooltip('n44',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7134,2154,7829,2337" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/8.5-K-BCE')" alt="" onmouseover="showTooltip('n43',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3058,1507,3770,1823" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/80-48K-BCE')" alt="" onmouseover="showTooltip('n42',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="905,1689,1366,1823" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/78K-BCE')" alt="" onmouseover="showTooltip('n41',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6638,1987,6695,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/9K-BCE')" alt="" onmouseover="showTooltip('n40',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6928,1987,6985,2043" alt="" onmouseover="showTooltip('n39',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="955,1987,1011,2043" alt="" onmouseover="showTooltip('n38',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3386,1987,3442,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/80-48K-BCE')" alt="" onmouseover="showTooltip('n37',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7453,1987,7510,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/8.5-K-BCE')" alt="" onmouseover="showTooltip('n36',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1278,1987,1335,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/77K-BCE')" alt="" onmouseover="showTooltip('n35',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1107,1987,1163,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/78K-BCE')" alt="" onmouseover="showTooltip('n34',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2163,1987,2219,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/72K-BCE')" alt="" onmouseover="showTooltip('n33',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2481,1987,2538,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/68K-BCE')" alt="" onmouseover="showTooltip('n32',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3724,1987,3780,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/48K-BCE')" alt="" onmouseover="showTooltip('n31',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4277,1987,4333,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/26K-BCE')" alt="" onmouseover="showTooltip('n30',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4803,1987,4860,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/16K-BCE')" alt="" onmouseover="showTooltip('n29',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5320,1987,5377,2043" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/12K-BCE')" alt="" onmouseover="showTooltip('n28',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5775,1987,5831,2043" alt="" onmouseover="showTooltip('n27',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="5975,1987,6032,2043" alt="" onmouseover="showTooltip('n26',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6175,1987,6232,2043" alt="" onmouseover="showTooltip('n25',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="3037,2155,4468,2572" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/48K-BCE')" alt="" onmouseover="showTooltip('n24',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3859,1500,4751,1823" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/26K-BCE')" alt="" onmouseover="showTooltip('n23',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5435,2155,6739,2785" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/10K-BCE-Period')" alt="" onmouseover="showTooltip('n22',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4886,1493,5811,1823" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/12K-BCE')" alt="" onmouseover="showTooltip('n21',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2041,2155,2978,2397" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/68K-BCE')" alt="" onmouseover="showTooltip('n20',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5603,1913,6526,2117" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Atlantis-Period/10K-BCE-Period')" alt="" onmouseover="showTooltip('n19',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4837,885,4894,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/350K-YA')" alt="" onmouseover="showTooltip('n18',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4489,968,5243,1173" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/350K-YA')" alt="" onmouseover="showTooltip('n17',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="2740,721,3402,819" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/28.2-Million-YA')" alt="" onmouseover="showTooltip('n16',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3043,885,3099,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/28.2-Million-YA')" alt="" onmouseover="showTooltip('n15',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5873,968,6614,1137" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/130K-YA')" alt="" onmouseover="showTooltip('n14',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7211,683,7790,819" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/100K-YA')" alt="" onmouseover="showTooltip('n13',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3782,721,4514,819" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/5.3-Million-YA')" alt="" onmouseover="showTooltip('n12',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1563,968,2417,1110" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/890-Million-YA')" alt="" onmouseover="showTooltip('n11',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="711,698,1294,818" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/3-Billion-YA')" alt="" onmouseover="showTooltip('n10',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1962,885,2018,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/890-Million-YA')" alt="" onmouseover="showTooltip('n9',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4120,885,4176,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/5.3-Million-YA')" alt="" onmouseover="showTooltip('n8',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="5475,885,5531,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/309K-YA')" alt="" onmouseover="showTooltip('n7',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="974,885,1031,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/3-Billion-YA')" alt="" onmouseover="showTooltip('n6',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3659,885,3716,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/27-Million-YA')" alt="" onmouseover="showTooltip('n5',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6215,885,6272,942" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/130K-YA')" alt="" onmouseover="showTooltip('n4',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7472,898,7529,955" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/100K-YA')" alt="" onmouseover="showTooltip('n3',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="3416,968,3959,1110" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/27-Million-YA')" alt="" onmouseover="showTooltip('n2',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="4759,528,6247,819" onclick="showIframeUrlPage('https://casscosmology.netlify.app/Pre-Atlantis-Period/309K-YA')" alt="" onmouseover="showTooltip('n1',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7410,252,7599,441" href="https://cassiopaeatranscripts.org/" alt="" onmouseover="showTooltip('n145',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="7169,4854,7226,4911" alt="" onmouseover="showTooltip('n144',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6949,4825,7062,4938" alt="" onmouseover="showTooltip('n143',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6949,5186,7062,5299" alt="" onmouseover="showTooltip('n142',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6949,5035,7062,5148" alt="" onmouseover="showTooltip('n141',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6888,4611,7921,5312" alt="" />
+  <area shape="rect" coords="643,235,794,385" href="https://cassiopaea.org" alt="" onmouseover="showTooltip('n139',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="248,5247,342,5341" alt="" onmouseover="showTooltip('n138',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="248,4266,342,4361" alt="" onmouseover="showTooltip('n137',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="248,2826,342,2921" alt="" onmouseover="showTooltip('n136',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="248,1196,342,1290" alt="" onmouseover="showTooltip('n135',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="248,460,342,555" alt="" onmouseover="showTooltip('n134',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="6564,255,6696,387" alt="" onclick= "downloadPDFfromDrive('1AbCDEFGHIJKLmnopQRstuVWXYZ')"  onmouseover="showTooltip('n133',event)" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="7110,208,7298,397" href="https://casswiki.net" alt="" onmouseover="showTooltip('n132',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="6865,252,7016,398" href="https://cassiopaea.org/forum" alt="" onmouseover="showTooltip('n131',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="952,192,1030,334" href="https://cassiopaea.org" alt="" onmouseover="showTooltip('n130',event)" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="399,142,7930,474" alt=""  />
+  <area shape="rect" coords="399,474,7921,1223" alt=""  />
+  <area shape="rect" coords="399,4281,7921,5312" alt=""  />
+  <area shape="rect" coords="397,5312,7923,5519" alt=""  />
+  <area shape="rect" coords="399,1223,7921,2842" alt=""  />
+  <area shape="rect" coords="399,2842,7921,4281" alt=""  />
+  <area shape="rect" coords="10,9,7958,5590" />
+</map>
+<div class="tooltip" id="n0">Group 1</div>
+<div class="tooltip" id="n1">
+* <span style="background-color: black; color: white">Lizards</span> take over of 3D Earth<br>
+* Start of 309K years Wave Cycle<br>
+* Fall of Man - Adam & Eve<br>
+* Lemuria submerged (Pacific Ocean)< &nbsp;<br>
+* Easter Island (Statues - Nephilim) is remnant of Lumeria &nbsp;
+</div>
+<div class="tooltip" id="n2">   Dinosaurs Extinct<br>(Comet bombardment)</div>
+<div class="tooltip" id="n3">100K YA</div>
+<div class="tooltip" id="n4">130K YA</div>
+<div class="tooltip" id="n5">27 Million YA</div>
+<div class="tooltip" id="n6">3 Billion YA</div>
+<div class="tooltip" id="n7">309K YA</div>
+<div class="tooltip" id="n8">5.3 Million YA</div>
+<div class="tooltip" id="n9">890 Million YA</div>
+<div class="tooltip" id="n10">Birth of Moon from Earth<br>(Cometary interaction)</div>
+<div class="tooltip" id="n11">Ooart Cloud Comet Cluster First Entry<br>Current Periodicity: 3600 years</div>
+<div class="tooltip" id="n12"> Earth's Oldest Man-<span style="background-color: yellow;">Neanderthal</span> </div>
+<div class="tooltip" id="n13">Last Pole Shift<br>(100K Years Periodicity)</div>
+<div class="tooltip" id="n14">Planting of Jews in Middle East &nbsp;<br>
+ &nbsp; &nbsp; &nbsp;(by <span style="background-color: black; color: white">Lizards/4D STS</span>)</div>
+<div class="tooltip" id="n15">28.2 Million YA</div>
+<div class="tooltip" id="n16">* Last Sun's twin (nemesis) <br>   Interaction - cyclical</div>
+<div class="tooltip" id="n17"> "Landing Strip" on Moon<br>
+Residue of Underground Lignite  &nbsp;<br>
+ & Gold Minings by  &nbsp;<span style="background-color: black; color: white">Orion STS</span> </div>
+<div class="tooltip" id="n18">350K YA</div>
+<div class="tooltip" id="n19">10K BCE Period</div>
+<div class="tooltip" id="n20">* Continental Shift of Laurasia/Gondwana<br>* Indian Plate collision with Eurasian Plate<br>* Lake Toba supervolcano eruption <br>   & Cataclysm</div>
+<div class="tooltip" id="n21">* Machu Picchu<br>* comets and migrations to underground<br>* Extinction of Clovis Race<br>* Nephilim brought in (one reference)<br>* Cart Ruts from Malta (Magnetic<br>   disturbances)<br>* Origin of Piri Ries map</div>
+<div class="tooltip" id="n22">* Younger Dryas (Flash freezing of Mammoths)<br>* 7 Degrees Geographical axis tilt<br>* Noah's Flood Myth (Mars, Comets)<br>   - 19 Million of 6 Billion survived<br>* Tower of Babel destruction by Lizards<br>* Final Breakup of Atlantis (recovered)<br>* Migration to Canary Island, Egypt, Inca<br>* Construction of Gobekli Tepe (Surviving Pyramid builders)<br>* The war of 10 kings (Mahabharata)<br>* Submergence of Dwarika<br>* End of longevity gene (Age: 2500 yrs(7% people),<br>        rest 800 yrs avrg.)</div>
+<div class="tooltip" id="n23">
+* cometary bombardment.<br>
+* Taupo supervolcano(NZ) eruption<br>
+* Arrival of the <span style="background-color: black; color: white">STS Orion headquarters</span> <br>
+*  <span style="background-color: black; color: white">Lizards</span> lived among humans? <br>
+* Atlantis 2nd Breakup & Destruction
+</div>
+<div class="tooltip" id="n24">
+* Atlantis 1st Destruction - 5 pieces<br>
+* India: Nuclear War between  &nbsp;<span style="background-color: #D4A99C">Paranthas</span> and <span style="background-color: white">Kantekanians </span><br>
+  &nbsp; & 50% destruction,<br>
+* <span style="background-color: #D4A99C">Paranthas (Ancestors of Dravidians) &nbsp;</span> Extinction  due to <br> &nbsp;  cataclysm (F-M89 Haplogroup) <br>
+* Historical Rama as Atlantean High priest & Legend of Phoenix  &nbsp; <br>
+* Atlantean pyramids on Mars 
+</div>
+<div class="tooltip" id="n25">Egypt/Inca etc.</div>
+<div class="tooltip" id="n26">  YD+40 Yrs</div>
+<div class="tooltip" id="n27">10.6 K (YD)</div>
+<div class="tooltip" id="n28">12.4K BCE</div>
+<div class="tooltip" id="n29">16K BCE</div>
+<div class="tooltip" id="n30">26K BCE</div>
+<div class="tooltip" id="n31">48K BCE</div>
+<div class="tooltip" id="n32">68K BCE</div>
+<div class="tooltip" id="n33">72K BCE</div>
+<div class="tooltip" id="n34">78K BCE</div>
+<div class="tooltip" id="n35">77K BCE</div>
+<div class="tooltip" id="n36">8.5 K BCE</div>
+<div class="tooltip" id="n37">80- 48K BCE</div>
+<div class="tooltip" id="n38">80K BCE</div>
+<div class="tooltip" id="n39">8788 BCE</div>
+<div class="tooltip" id="n40">9K BCE</div>
+<div class="tooltip" id="n41">Comet Venus Entry<br>into Solar System</div>
+<div class="tooltip" id="n42">Early writing of  &nbsp;<i>Book of Enoch</i> <br>
+by Sanskrit Society in India.&nbsp;<br><b>Races</b>: <br>
+&nbsp;<span style="background-color: #D4A99C">* Paranthas (Denisovan type)</span> <br>
+&nbsp;<span style="background-color: #8ECAFF">* Native Amertican types </span> <br>
+&nbsp;* Some <span style="background-color: white">Kantek types </span>
+</hmtl> </div>
+<div class="tooltip" id="n43">* Final Destruction of Atlantis<br>  (Pyramids)<br>* Sphinx & Egyptian Pyramids</div>
+<div class="tooltip" id="n44">Arrival(another reference) of Nephilim<br>(Presented as "Sons" of God)</div>
+<div class="tooltip" id="n45">
+<span style="background-color: black; color: white">Lizard</span> Frozen in Time 
+<br>to alter Human Affairs <br>
+</div>
+<div class="tooltip" id="n46">* Start of Vedas Collection<br>        (In Transit - BMAC?)<br>* Most of Vedas written in India</div>
+<div class="tooltip" id="n47">
+* Explosition of 5th planet Kantek(to Asteroid belt)<br>
+* Migration of &nbsp; <span style="background-color: white;">Kantekanian (ancestors of Celts, Aryans) &nbsp;</span><br>
+&nbsp; &nbsp; to Earth through Portal at Kiev (<span style="background-color: black; color: white">Lizard</span> Air drop & Merkaba) &nbsp;<br>
+* Atlanteans well established <br>
+* 233 years coexistence with <span style="background-color: yellow;">Neanderthal</span><br>
+* <span style="background-color: yellow;">Neanderthal</span> taken to Other planets by <span style="background-color: black; color: white">4D Lizards</span>
+</div>
+<div class="tooltip" id="n48">17.7K</div>
+<div class="tooltip" id="n49">14.4K</div>
+<div class="tooltip" id="n50">12.1K</div>
+<div class="tooltip" id="n51">13.4K</div>
+<div class="tooltip" id="n52">Comet dust Enhancements<br>in Camp Century Ice Core<br>     (Clube & Napier)<br>       Approx. Years</div>
+<div class="tooltip" id="n53">* Baalbek (1st. cometary <br>      Venus Interaction)<br>* Narmer Rebillion (3211 BC)</div>
+<div class="tooltip" id="n54">
+ Mohenjo-Daro<br>
+(Built by <span style="background-color: black; color: white">Lizards</span>)
+</div>
+<div class="tooltip" id="n55">
+ Nordic Covenant <br>
+(Mostly Humans &<br> <span style="background-color: black; color: white">Some Others</span>)
+</div>
+<div class="tooltip" id="n56">
+* Bronze Age Destruction<br>
+&nbsp;  (Giant Comet Remnants)<br>
+* End of "Sound wave focusing" <br>
+ &nbsp; (Megalith) technology<br>
+* End of Mohenjo-Daro<br>
+* Angkhor Wat(Built by <span style="background-color: black; color: white">Lizards</span>)<br>
+* Troy (in Britain) destroyed (illiad)  &nbsp;
+</html>
+</div>
+<div class="tooltip" id="n57">
+* End of Iron Age civilization<br>
+* Planetary tilt 20 Deg.(slowly)&nbsp;<br>
+* <span style="background-color: black; color: white">Lizards</span> living among  Humans<br>
+  &nbsp;&nbsp; (Last time)<br>
+* Ramayan written ?
+</div>
+<div class="tooltip" id="n58">1100 BCE</div>
+<div class="tooltip" id="n59">44 BCE</div>
+<div class="tooltip" id="n60">1600 BCE</div>
+<div class="tooltip" id="n61">2300 BCE</div>
+<div class="tooltip" id="n62">2676 BCE</div>
+<div class="tooltip" id="n63">3131 BCE</div>
+<div class="tooltip" id="n64">3218 BCE</div>
+<div class="tooltip" id="n65">4098 BCE</div>
+<div class="tooltip" id="n66">5200 BCE</div>
+<div class="tooltip" id="n67">5633 BCE</div>
+<div class="tooltip" id="n68">7K BCE</div>
+<div class="tooltip" id="n69">753 BCE</div>
+<div class="tooltip" id="n70">8K BCE</div>
+<div class="tooltip" id="n71">
+* Matriarchy Period (Y-chromosome Bottleneck)<br>
+* <span style="background-color: #D4A99C">Kumari Kandam</span> Submerged? - 6826 BCE <br>
+* <span style="background-color: white">Aryan</span> Invasion of India (Iranian Farmers) - 6249 BCE <br>
+&nbsp; &nbsp<u>Before</u>: <span style="background-color: yellow"> #3 Prototype - Neanderthal</span><br> 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; & Asian Tribes (<span style="background-color: #D4A99C">Parantha</span><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  Descendants/Dravidians)
+</div>
+<div class="tooltip" id="n72">     Bible Exodus<br>(Last cometary Venus<br>  Interaction)</div>
+<div class="tooltip" id="n73">Julius Caesar Assassination<br>(Jesus legend)<br></div>
+<div class="tooltip" id="n74">
+* <span style="background-color: #8ECAFF"> Native Americans</span> : Asia to<br> &nbsp;&nbsp; Americas
+  (<span style="background-color: black; color: white">Lizards</span> Air drop)<br>
+</div>
+<div class="tooltip" id="n75">
+* Stone Henge - <span style="background-color: white">Druids</span> <br>
+&nbsp;&nbsp;(Energy Redirector)<br>
+* North Africa Green and Fertile <br>
+* Oak Island TDARM (placed by <span style="background-color: black; color: white">Lizards</span>) <br>
+* Invention of Agriculture
+</div>
+<div class="tooltip" id="n76">Original Freemasons as overseers<br>of status of Quorum - 33rd degree <br>is same as today</div>
+<div class="tooltip" id="n77">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rome Built<br>
+ (<span style="background-color: white">Steppes Warriors</span> & Locals)
+</div>
+<div class="tooltip" id="n78">6K BCE</div>
+<div class="tooltip" id="n79">* City of Tiahuanaco <br>&nbsp;&nbsp; Built By (<span style="background-color: black; color: white">Lizards</span> & Humans)<br>
+* Nephilim died off
+</div>
+<div class="tooltip" id="n80">
+* Eruption of Thera<br>
+* Exodus from Crete<br>
+* Another <span style="background-color: white">Aryan</span> Migration<br> to India?
+</html>
+</div>
+<div class="tooltip" id="n81">Avebury Henge</div>
+<div class="tooltip" id="n82">2200 BCE</div>
+<div class="tooltip" id="n83">4233 BCE</div>
+<div class="tooltip" id="n84">Countries from Illiad & Odessey in Europe<br>
+&nbsp;&nbsp;  "<i>(Where Troy once stood)</i>"
+</div>
+<div class="tooltip" id="n85">         Pompeii<br>(Vesuvius Eruption)</div>
+<div class="tooltip" id="n86">1350 AD</div>
+<div class="tooltip" id="n87">1953 AD</div>
+<div class="tooltip" id="n88">2014 AD</div>
+<div class="tooltip" id="n89">before 564AD dummy Yrs</div>
+<div class="tooltip" id="n90">564 AD</div>
+<div class="tooltip" id="n91">700 AD</div>
+<div class="tooltip" id="n92">US Govt.: Fake Treaty<br>
+ with <span style="background-color: black; color: white">Aliens</span>
+</div>
+<div class="tooltip" id="n93">Oldest Russian Language</div>
+<div class="tooltip" id="n94">Paleo-Eskimo flash freeze<br>extinction (Lived for 4K years)</div>
+<div class="tooltip" id="n95">* Rome Burning (Comet) & Dark Ages<br>* Brahminical switch to Vegetarianism<br>* Last Decline of Giants</div>
+<div class="tooltip" id="n96">Year 0 of new Wave Cycle</div>
+<div class="tooltip" id="n97">56 AD</div>
+<div class="tooltip" id="n98">2nd dummy</div>
+<div class="tooltip" id="n99">470 Dummy Years<br>Addition in the <br>Historical Chronology </div>
+<div class="tooltip" id="n100">1100 AD</div>
+<div class="tooltip" id="n101">* West Europe Dark Age<br>  (Comet Fragement Impact)<br>* 5000 yr. old Supernova <br>   (Crab Nebula) became visible </div>
+<div class="tooltip" id="n102">Comets of 1830's,<br>Planetary stress &<br>Window Fallers</div>
+<div class="tooltip" id="n103">Oak Island TDARM pit dug</div>
+<div class="tooltip" id="n104">US Govt.: Relaization of<br>               Alien Tickery</div>
+<div class="tooltip" id="n105">Roswell Accident</div>
+<div class="tooltip" id="n106">1500 AD</div>
+<div class="tooltip" id="n107">1830 AD</div>
+<div class="tooltip" id="n108">1947 AD</div>
+<div class="tooltip" id="n109">1972 AD</div>
+<div class="tooltip" id="n110">banner_gray_1</div>
+<div class="tooltip" id="n111">banner_pink_2</div>
+<div class="tooltip" id="n112">banner_purple_1</div>
+<div class="tooltip" id="n113">banner_pink_2</div>
+<div class="tooltip" id="n114">Gobekli Tepe</div>
+<div class="tooltip" id="n115">banner_green_1</div>
+<div class="tooltip" id="n116">banner_pink_1</div>
+<div class="tooltip" id="n117">banner_pink_3</div>
+<div class="tooltip" id="n118">banner_pink_3</div>
+<div class="tooltip" id="n119">banner_purple_2</div>
+<div class="tooltip" id="n120">1302 AD</div>
+<div class="tooltip" id="n121">Addition of Libra to 11 house<br>Zodiac</div>
+<div class="tooltip" id="n122">Fall of Great Pyramid<br>Capstone (Old Age)</div>
+<div class="tooltip" id="n123">2809 BCE</div>
+<div class="tooltip" id="n124">Post Atlantis Period</div>
+<div class="tooltip" id="n125">Atlantean Civilization</div>
+<div class="tooltip" id="n126">ImageTrailer</div>
+<div class="tooltip" id="n127">Christian Era</div>
+<div class="tooltip" id="n128">Pre Atlantis Period</div>
+<div class="tooltip" id="n129">ImageHeader</div>
+<div class="tooltip" id="n130">Cassiopaea</div>
+<div class="tooltip" id="n131">Forum</div>
+<div class="tooltip" id="n132">casswiki</div>
+<div class="tooltip" id="n133">Download</div>
+<div class="tooltip" id="n134">3 bil. YA</div>
+<div class="tooltip" id="n135">80K BCE</div>
+<div class="tooltip" id="n136">8000 BCE</div>
+<div class="tooltip" id="n137">1 AD</div>
+<div class="tooltip" id="n138">2014 AD</div>
+<div class="tooltip" id="n139">Cassiopaea</div>
+<div class="tooltip" id="n140">LEGEND</div>
+<div class="tooltip" id="n141">    Oort Cloud Comet Cluster (3600 Yrs)</div>
+<div class="tooltip" id="n142">   Giant Comet Disintegration Events</div>
+<div class="tooltip" id="n143">Races  </div>
+<div class="tooltip" id="n144">
+<span style="background-color: white">Aryans</span><br>
+<span style="background-color: #8ECAFF">Native American</span> <br> 
+<span style="background-color: yellow">Neandethal</span><br>
+<span style="background-color: #D4A99C">Parantha/Descendants</span> <br>
+<span style="background-color: black; color: white">4D STS</span>
+</div>
+<div class="tooltip" id="n145">Transcripts</div>
+  </div>
+  </div>
+    <div class="right-pane" id="rightPane">
+      <iframe id="myIframe" width="100%" height="100%" src=""></iframe>
+    </div>
+</div>
+
+<script type="text/javascript">
+        var urlHistory = [];
+        var currentIndex = -1;
+
+        function updateIframeSrc() {
+            var url = document.getElementById('urlInput').value;
+            if (url) {
+                urlHistory = urlHistory.slice(0, currentIndex + 1);
+                urlHistory.push(url);
+                currentIndex++;
+                document.getElementById('myIframe').src = url;
+            }
+        }
+		
+        document.getElementById('myIframe').onload = function() {
+            var iframeContent = document.getElementById('myIframe').contentDocument || document.getElementById('myIframe').contentWindow.document;
+            var callouts = iframeContent.querySelectorAll('.callout');
+
+            callouts.forEach(function(callout) {
+                // Process and display callout content
+                callout.style.display = 'block'; // Ensure callout is visible
+                callout.style.backgroundColor = '#f0f0f0'; // Example styling
+            });
+        };
+		
+        function showIframeUrlPage(url) {
+            if (url) {
+                urlHistory = urlHistory.slice(0, currentIndex + 1);
+                urlHistory.push(url);
+                currentIndex++;
+                document.getElementById('myIframe').src = url;
+            }
+        }
+
+        function goBack() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                document.getElementById('myIframe').src = urlHistory[currentIndex];
+            }
+        }
+
+        function goForward() {
+            if (currentIndex < urlHistory.length - 1) {
+                currentIndex++;
+                document.getElementById('myIframe').src = urlHistory[currentIndex];
+            }
+        }
+
+        function closeIframe() {
+            document.getElementById('myIframe').src = "";
+        }
+
+        let tooltip = null;
+        document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+            if (tooltip) {
+                const x = e.pageX;
+                const y = e.pageY;
+                const tooltipWidth = tooltip.offsetWidth;
+                const tooltipHeight = tooltip.offsetHeight;
+                const pageWidth = window.innerWidth;
+                const pageHeight = window.innerHeight;
+
+                const offset = 20;
+                const newX = x + offset + tooltipWidth > pageWidth ? x - offset - tooltipWidth : x + offset;
+                const newY = y + offset + tooltipHeight > pageHeight ? y - offset - tooltipHeight : y + offset;
+
+                tooltip.style.left = `${newX}px`;
+                tooltip.style.top = `${newY}px`;
+            }
+
+}
+        function showTooltip(id, event) {
+            tooltip = document.getElementById(id);
+            updateTooltip(event);	    
+    	   const contentDiv = document.getElementById(id); // The hidden content div (e.g., "n16")
+
+    		// Dynamically set the HTML content
+    		tooltip.innerHTML = contentDiv.innerHTML
+            tooltip.style.display = "block";
+        }
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+function resizeMap() {
+  const spinner = document.getElementById('inlineSpinner');
+  spinner.classList.add('visible');
+
+  setTimeout(() => {
+    const img = document.getElementById('myImage');
+    const areas = document.getElementsByTagName('area');
+    const imgWidth = img.naturalWidth;
+    const imgHeight = img.naturalHeight;
+    const displayedWidth = img.clientWidth;
+    const displayedHeight = img.clientHeight;
+    const widthRatio = displayedWidth / imgWidth;
+    const heightRatio = displayedHeight / imgHeight;
+
+    for (let area of areas) {
+      let coords = area.dataset.originalCoords.split(',').map(Number);
+      let newCoords = coords.map((coord, index) => {
+        return index % 2 === 0
+          ? Math.round(coord * widthRatio)
+          : Math.round(coord * heightRatio);
+      });
+      area.coords = newCoords.join(',');
+    }
+
+    spinner.classList.remove('visible');
+  }, 300); // Slight delay to show animation
+}
+
+function debounce(func, delay) {
+  let timeout;
+  return function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, delay);
+  };
+}
+const debouncedResizeMap = debounce(resizeMap, 200);
+        window.onload = function() {
+            const areas = document.getElementsByTagName('area');
+            for (let area of areas) {
+                area.dataset.originalCoords = area.coords;
+            }
+            resizeMap();
+        }
+
+        window.onresize = resizeMap;
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const leftPane = document.getElementById('leftPane');
+      const increaseBtn = document.getElementById('increaseWidth');
+      const decreaseBtn = document.getElementById('decreaseWidth');
+      const resetBtn = document.getElementById('resetWidth');
+      const step = 50;
+      const minWidth = 200;
+      const maxWidth = window.innerWidth - 100;
+      const defaultWidth = 1000;
+	  
+		tippy('[data-tippy-content]', {
+		  animation: 'scale',
+		  theme: 'light',
+		  delay: [100, 50],
+		  allowHTML: true,
+		});
+      increaseBtn.addEventListener('click', () => {
+        let currentWidth = leftPane.offsetWidth;
+        let newWidth = Math.min(currentWidth + step, maxWidth);
+        leftPane.style.width = newWidth + 'px';
+  debouncedResizeMap(); // Add this line
+      });
+
+      decreaseBtn.addEventListener('click', () => {
+        let currentWidth = leftPane.offsetWidth;
+        let newWidth = Math.max(currentWidth - step, minWidth);
+        leftPane.style.width = newWidth + 'px';
+  debouncedResizeMap(); // Add this line
+      });
+
+      resetBtn.addEventListener('click', () => {
+        leftPane.style.width = defaultWidth + 'px';
+  debouncedResizeMap(); // Add this line
+      });
+    });
+	
+	function downloadPDFfromDrive(fileId) {
+  const link = document.createElement('a');
+  const fileId1 = '1qNmOrVe9v202LJrrdkIXGKflpJEdM4PW' ;
+  link.href = `https://drive.google.com/uc?export=download&id=${fileId1}`;
+  link.download = ''; // Optional: specify filename
+  link.target = '_blank'; // Opens in new tab if download fails
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  const iframe = document.getElementById('myIframe');
+  if (!sessionStorage.getItem('initialLoadDone')) {
+    iframe.src = 'https://casscosmology.netlify.app';
+    sessionStorage.setItem('initialLoadDone', 'true');
+  }
+});
+  </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 > - Addition of 470 years before 564 AD to Timeline.
 ### Session Quotes
 
-> [Session Date: Jul 12, 2014](https://cassiopaea.org/forum/threads/session-12-july-2014.35409/post-506924)
+> <a href="https://cassiopaea.org/forum/threads/session-12-july-2014.35409/post-506924" target="_blank" rel="noopener noreferrer"> Session Date: Jul 12 2014</a>
 >
 > (Perceval) Is the time scale that we have for the kind of Dark Ages, fall of Rome, is that more or less correct...?
 > 

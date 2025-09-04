@@ -1,8 +1,9 @@
 > [!abstract] Events
 > - Last Arrival of Nephalim (15ft & Presented as "Sons" of God)- another reference.
 ### Session Quotes
+#### Last Arrival of Nephalim
 
-> [Session Date: Nov 02, 1994](https://cassiopaea.org/forum/index.php/topic,28371.msg353139.html)
+> <a href="https://cassiopaea.org/forum/index.php/topic,28371.msg353139.html" target="_blank" rel="noopener noreferrer"> Session Date: Nov 02 1994</a>
 > 
 > Q: (L) Well if the Nephilim were brought here 9 to 12 thousand years ago...
 > 
@@ -110,21 +111,3 @@
 > 
 > A: Part of grand cycle.
 
-> [Session Date: Sep 30, 1994](https://cassiopaea.org/forum/index.php/topic,25860.msg308046.html)
-> 1 Reading in a very well researched book entitled "Lost Survivors of the Deluge," by Gerd von Hassler and translated from the German by Martin Ebon, we find the following relating to this mysterious "Tonatha":
-> 
-> "In the Bible it says: "And it came to pass, when men began to multiply on the face of the earth, and daughters were born unto the,, that the Sons of God saw the daughters of men that they were fair; and they took them wives of all which they chose. And the Lord said, My spirit shall not always strive with man, for that he also is flesh: yet his days shall be but a hundred and twenty years.
-> 
-> "With this Divine dictum, the golden times, when gods and their direct offspring lived to be 900 years old, and more, came to an end.
-> 
-> "For hundreds of years, these lines have troubled religious scholars, because direct and literal translations specifically yields the term "Sons of God," as pursuing human maidens. Accordingly, some 2,000 years were devoted to many an inspired and convoluted explanation, in order to come to terms with a notion that fits neither the concepts of the Bible, nor that of a heavenly Divine Creator, but had to be given an appropriate interpretation.
-> 
-> "This is a fact [since the Deluge] we have lost godlike Near-Immortality and all the efforts to intensify the quality of the divine blood through incest - as both the Inca Emperors and the Pharaohs attempted - had to fail. [...] The Divine Blood had been diluted.
-> 
-> "But God had desired the equality of the divine with the human. The Bible tells us: And God said, let us make man in our image, after our likeness...
-> 
-> "Let us make man in our image' is but one of the somewhat dictatorial decisions of democratic majorities within a family of gods, to be found in all the world's myths.
-> 
-> "This brings us to the crucial question. It is, indeed, so vital and controversial that St. Boniface, when he presented it to the Frisians during his missionary journey on June 5, 754, was put to death by the sword! Today, we may ask such a question without facing the sword; it is: Just what is the name of the God-Creator? What is the name of the god who governed the earth even before the Deluge; this God of Gods, rightly called Father of the Gods, and thus Father of all Mankind? To put it even more simply: If a highly developed civilization existed more than 10,000 year ago, governing the world's then populated regions, and if the God-King was able to aid his contemporaries in surviving the Deluge catastrophe, surely the name of this ruler must have been handed down to later generations of survivors; who was he?
-> 
-> "We know from the Epic of Gilgamesh, of the horrible Enlil, who was responsible for the Deluge. The other gods did not think highly of him, but feared him a good deal. His influence never extended beyond Mesopotamia. His antagonist, Shamash, the Sun God, enjoyed greater prestige. He remains, notably in Asia even today, a figure of magical power, the epitome of the shaman. But even the early Egyptians called their Sun God by a different name, Ra. This need not mean much, because Plato tells us that the Egyptians had even then developed a unique and high level of civilization hostile toward the unknown earlier culture.
