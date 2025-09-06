@@ -1,10 +1,10 @@
 > [!abstract] Events
-> - Comet dust Enhancements in Camp Century Ice Core at 17.7K, 14.4K, 13.4K, 12K BCE period (Clube & Napier).
+> - Comet dust Enhancements in Camp Century Ice Core at 17.7K, 14.4K, 13.4K, 12K BCE period (Clube & Napier) during Atlantis Period and later.
 ### Session Quotes
 
 #### Comet dust Enhancements in Camp Century Ice Core
 
-> <a href="https://cassiopaea.org/forum/threads/session-12-december-2010.20995/" target="_blank" rel="noopener noreferrer"> Session Date: Dec 12 2010</a>
+> [Session Date: Dec 10, 2010](https://cassiopaea.org/forum/threads/session-12-december-2010.20995/)
 > 
 > Q: (L) Well, I wanted to ask some questions about Earth Changes. I’ve got this book here “Planet X, Comets and Earth Changes by James McCanney. He’s on about what he calls the “Plasma Discharge Comet Theory” which is that comets are basically asteroid type bodies that enter the Solar system, the Solar System being a capacitor, and when they enter the solar system, they discharge the capacitor and that’s what causes the comet effects: the glow, the illumination, the tail and so on. He says that basically comets are just planets in formation, that there are really big ones that have accumulated a lot of mass or have a lot of mass. You know, they go through the Solar System and keep attracting more and more stuff, and more and more stuff and eventually precipitate into orbit and become planets. He basically said that that’s how the planets of the Solar System got here with the exception of Jupiter and Saturn. They kind of formed at the same time as the sun. All the other planets were acquired. Is he on to something with this? Is this anywhere near accurate?
 > 

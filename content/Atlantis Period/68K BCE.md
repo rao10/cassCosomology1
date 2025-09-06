@@ -26,10 +26,11 @@
 > (seek10) When did Indian plate get connected to Eurasian plate? Is it 70K years ago or after that?
 > 
 > A: Close enough.
+
 #### Lake Toba super volcano eruption  & Cataclysm
 
 > <a href="https://cassiopaea.org/forum/threads/session-10-december-2022.52781/" target="_blank" rel="noopener noreferrer"> Session Date: Oct 22, 2022</a>
-
+>
 > Q: (whitecoast) The 70k years ago time for the continental shift of Laurasia/Gondwana coincides with the population collapse postulated to have been caused by the Lake Toba supervolcano eruption mentioned in the book Into Africa by Bruce R. Fenton. Were these continental shifts at least in part precipitated by the destruction of Kantek...?
 > 
 > A: Yes
