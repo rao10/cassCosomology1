@@ -20,7 +20,6 @@
 > A: 12009 BC. 
 #### Comets and migration to underground
 
-
 ><a href="https://cassiopaea.org/forum/threads/session-23-september-2023.53808/" target="_blank" rel="noopener noreferrer">Session Date: Sep 23, 2023</a>
 >
 > (Approaching Infinity) What was the initial impetus for going underground 14,000 years ago?
